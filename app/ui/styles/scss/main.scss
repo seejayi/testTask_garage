@@ -1,0 +1,227 @@
+//header
+
+.navbar-default{
+	background-image: none;
+	background-color: #C8b485;
+	border-radius: 0;
+	margin-bottom: 0;
+	border: none;
+}
+
+.navbar-toggle {
+	display: inline-block;
+	border: none;
+	color: #453c25;
+	background-color: #C8b485 !important;
+	.icon-bar {
+		position: relative;
+		background-color: #453c25 !important; 
+	}
+	&:hover{
+		
+		.icon-bar:first-child{
+			transition: all 500ms ease-in-out;
+			top: -1px;
+		}
+		.icon-bar:last-child{
+			transition: all 500ms ease-in-out;
+			top: 1px;
+		} 
+	
+	}	
+}
+
+.btn-overview {
+	width: 140px;
+	background-color: #C8b485;
+	font-family: "OpenSans";
+  	font-size: 16px;
+	color: #443b25;
+	box-shadow: none;
+	border-radius: 0;
+	border-top: none;
+	border-bottom: none;
+	border-left: 1px solid #453c25;
+	border-right: 1px solid #453c25;
+	padding: 14px 0;
+	margin-right: -4px;
+	&.active {
+		background-color: #d2c29b;
+		box-shadow: none;
+		font-weight: bold;
+	}
+	&:hover{
+		background-color: #d3c39d;
+	}
+	&:active:focus{
+		outline: none;	
+	}
+	&.active:focus{
+		outline: none;
+	}
+	&:focus{
+		outline: none;	
+	}
+	.overview-icon {
+		width: 20px;
+		height: 14px;
+		position: absolute;
+		top: 15px;
+		left: 87px;
+		background-image: url('../../../ui/uploads/overview-icon.png');
+	}
+}
+
+.btn-details {
+	width: 140px;
+	background-color: #C8b485;
+	font-family: "OpenSans";
+  	font-size: 16px;
+	color: #443b25;
+	box-shadow: none;
+	border-radius: 0;
+	border-top: none;
+	border-bottom: none;
+	border-right: 1px solid #453c25;
+	padding: 14px 0;
+	&.active {
+		background-color: #d2c29b;
+		box-shadow: none;
+		font-weight: bold;
+	}
+	&:hover{
+		background-color: #d3c39d;
+	}
+	&:active:focus{
+		outline: none;	
+	}
+	&:focus{
+		outline: none;	
+	}
+	.details-icon {
+		width: 20px;
+		height: 16px;
+		position: absolute;
+		left: 237px;
+		background-image: url('../../../ui/uploads/details-icon.png');
+	}
+}
+.header-socials-wrap {
+	padding: 12px 110px 0 0;
+	text-align: right;
+	.share-social-text {
+	  font-size: 15px;
+	  font-family: "OpenSans";
+	  color: #453c25;
+	}
+	.social-fb {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		right: 65px;
+		top: 6px;
+		border: none;
+		background-image: url('../../../ui/uploads/fb-icon.png');
+		background-color: transparent;
+		:hover{
+			cursor: pointer;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+	.social-tw {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		right: 15px;
+    	top: 6px;
+    	border: none;
+		background-image: url('../../../ui/uploads/tw-icon.png');
+		background-color: transparent;
+		:hover{
+			cursor: pointer;
+		}
+		&:focus{
+			outline: none;	
+		}
+	}
+	
+}
+
+//content-header
+
+.no-padding {
+	padding: 0;
+}
+.content-header-wrap {
+	width: 100%;
+	height: 420px;
+	position: relative;
+	padding: 0;
+	background-image: url('../../../ui/uploads/content-header-lv.png');
+	background-size: 100% 100%;
+	.content-header-text {
+		position: absolute;
+		bottom: 25px;
+		padding: 0 5% 0 20%;
+		color: #fff;
+		.content-header-breadcrumbs {
+			.text-uppercase {
+				padding-right: 20px;
+			}
+			.family-icon {
+				width: 23px;
+				height: 20px;
+				padding: 0 15px 0 30px;
+				/*border-right: 1px ridge #fff;*/
+				background: url('../../../ui/uploads/family-icon.png') no-repeat;
+				&:after{
+					content:" ";
+					position: absolute;
+					width: 1px;
+					height: 20px;
+					background-color: #fff;
+					opacity: 0.4;
+					margin-left: 8px;
+				}
+			}
+			.food-icon {
+				width: 13px;
+				height: 20px;
+				padding: 0 18px 0 20px;
+				background: url('../../../ui/uploads/food-icon.png') no-repeat;
+				&:after{
+					content:" ";
+					position: absolute;
+					width: 1px;
+					height: 20px;
+					background-color: #fff;
+					opacity: 0.4;
+					margin-left: 8px;
+				}
+			}
+			.shopping-icon {
+				width: 22px;
+				height: 20px;
+				padding: 0 18px 0 30px;
+				background: url('../../../ui/uploads/shopping-icon.png') no-repeat;
+				&:after{
+					content:" ";
+					position: absolute;
+					width: 1px;
+					height: 20px;
+					background-color: #fff;
+					opacity: 0.4;
+					margin-left: 10px;
+				}
+			}
+			.pet-icon {
+				width: 20px;
+				height: 20px;
+				padding: 0 15px 0 28px;
+				background: url('../../../ui/uploads/pet-icon.png') no-repeat;
+			}
+		}
+	}
+}
