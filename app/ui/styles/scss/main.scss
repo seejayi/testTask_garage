@@ -226,6 +226,98 @@
 	}
 }
 
+.content-guide-wrap {
+	padding: 5px 12%;
+
+	.user-info-wrap{
+		.user-main-info{
+			margin: 30px 0 25px 0;
+			.media-left {
+
+			}
+			.media-body {
+				.user-rating{
+					margin-left: 0;
+					li{
+						padding: 0;
+						span{
+							color: #eed002;
+						}
+						.empty {
+							color: #d9d8c3;
+						}
+					}
+				}
+			}
+		}
+	}
+	.user-additional-info{
+		.user-progress-wrap{
+			width: 100%;
+			display: inline-block;
+			span{
+				width: 14%;
+			}
+			.progress{
+				width: 66%;
+				height: 10px;
+				display: inline-block;
+  				background-color: #b9e005;
+  				border: 1px solid #d9d8c3;
+  				border-radius: 35px;
+  				box-shadow: none;
+  				padding: 1px;
+  				margin: 6px 0 10px 15px;
+
+  				.progress-bar-success{
+  					background-color: #b9e005;
+  					border-radius: 10px;
+  				}
+			}
+		}
+	}
+}
+
+
+.content-slave-wrap {
+
+	.dotted-trip-img {
+		width: 195px;
+		height: 75px;
+		display: block;
+		margin: 0 auto;
+		background: url('../../../ui/uploads/dotted-trip.png') 100% 100% no-repeat;
+	}
+	h4 {
+
+	}
+	p{
+		width: 300px;
+		height: auto;
+    	margin: 0 auto;
+	}
+	.new-contest-btn{
+		width: 269px;
+		height: 50px;
+		font-size: 16px;
+		font-family: "OpenSans";
+		color: rgb(61, 56, 10);
+    	background-color: #ffdf06;
+  		box-shadow: 0px 2px 0px 0px rgba(223, 196, 10, 0.004);
+  		border-radius: 5px;
+  		margin: 15px 0 20px 0;
+
+  		:hover{
+
+  		}
+  		:focus{
+
+  		}
+  		:active{
+
+  		}
+	}
+}
 
 
 
@@ -275,7 +367,7 @@
 				width: 28px;
 				height: 28px;
 				display: inline-block;
-				background: url('../../../ui/uploads/footer-fb.png') 100% 100% no-repeat;
+				background: url('../../../ui/uploads/glyphicons-social/glyphicons-social-31-facebook.png') 100% 100% no-repeat;
 			}
 		}
 		.f-social-tw{
@@ -284,7 +376,7 @@
 				width: 28px;
 				height: 28px;
 				display: inline-block;
-				background: url('../../../ui/uploads/footer-tw.png') 100% 100% no-repeat;
+				background: url('../../../ui/uploads/glyphicons-social/glyphicons-social-32-twitter.png') 100% 100% no-repeat;
 			}
 		}
 	}

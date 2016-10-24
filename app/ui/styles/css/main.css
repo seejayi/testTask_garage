@@ -254,55 +254,133 @@
   background: url("../../../ui/uploads/pet-icon.png") no-repeat;
 }
 
-/* line 235, ../scss/main.scss */
+/* line 229, ../scss/main.scss */
+.content-guide-wrap {
+  padding: 5px 12%;
+}
+/* line 233, ../scss/main.scss */
+.content-guide-wrap .user-info-wrap .user-main-info {
+  margin: 30px 0 25px 0;
+}
+/* line 239, ../scss/main.scss */
+.content-guide-wrap .user-info-wrap .user-main-info .media-body .user-rating {
+  margin-left: 0;
+}
+/* line 241, ../scss/main.scss */
+.content-guide-wrap .user-info-wrap .user-main-info .media-body .user-rating li {
+  padding: 0;
+}
+/* line 243, ../scss/main.scss */
+.content-guide-wrap .user-info-wrap .user-main-info .media-body .user-rating li span {
+  color: #eed002;
+}
+/* line 246, ../scss/main.scss */
+.content-guide-wrap .user-info-wrap .user-main-info .media-body .user-rating li .empty {
+  color: #d9d8c3;
+}
+/* line 255, ../scss/main.scss */
+.content-guide-wrap .user-additional-info .user-progress-wrap {
+  width: 100%;
+  display: inline-block;
+}
+/* line 258, ../scss/main.scss */
+.content-guide-wrap .user-additional-info .user-progress-wrap span {
+  width: 14%;
+}
+/* line 261, ../scss/main.scss */
+.content-guide-wrap .user-additional-info .user-progress-wrap .progress {
+  width: 66%;
+  height: 10px;
+  display: inline-block;
+  background-color: #b9e005;
+  border: 1px solid #d9d8c3;
+  border-radius: 35px;
+  box-shadow: none;
+  padding: 1px;
+  margin: 6px 0 10px 15px;
+}
+/* line 272, ../scss/main.scss */
+.content-guide-wrap .user-additional-info .user-progress-wrap .progress .progress-bar-success {
+  background-color: #b9e005;
+  border-radius: 10px;
+}
+
+/* line 284, ../scss/main.scss */
+.content-slave-wrap .dotted-trip-img {
+  width: 195px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+  background: url("../../../ui/uploads/dotted-trip.png") 100% 100% no-repeat;
+}
+/* line 294, ../scss/main.scss */
+.content-slave-wrap p {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+/* line 299, ../scss/main.scss */
+.content-slave-wrap .new-contest-btn {
+  width: 269px;
+  height: 50px;
+  font-size: 16px;
+  font-family: "OpenSans";
+  color: #3d380a;
+  background-color: #ffdf06;
+  box-shadow: 0px 2px 0px 0px rgba(223, 196, 10, 0.004);
+  border-radius: 5px;
+  margin: 15px 0 20px 0;
+}
+
+/* line 327, ../scss/main.scss */
 .footer-wrap {
   background-color: #453c25;
   padding: 24px 50px 23px 50px;
 }
-/* line 239, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 .footer-wrap .footer-nav-links {
   text-decoration: inherit;
   padding: 10px 0 0 0;
 }
-/* line 243, ../scss/main.scss */
+/* line 335, ../scss/main.scss */
 .footer-wrap .footer-nav-links li a {
   color: #fff;
   text-decoration: none;
 }
-/* line 248, ../scss/main.scss */
+/* line 340, ../scss/main.scss */
 .footer-wrap .footer-nav-links :hover {
   color: #ffdf06;
 }
-/* line 253, ../scss/main.scss */
+/* line 345, ../scss/main.scss */
 .footer-wrap .footer-logo-link {
   margin-top: 6px;
 }
-/* line 256, ../scss/main.scss */
+/* line 348, ../scss/main.scss */
 .footer-wrap .footer-logo-link .footer-logo {
   width: 57px;
   height: 27px;
   display: inline-block;
   background: url("../../../ui/uploads/footer-arrow.png") 100% 100% no-repeat;
 }
-/* line 262, ../scss/main.scss */
+/* line 354, ../scss/main.scss */
 .footer-wrap .footer-logo-link :hover {
   background: url("../../../ui/uploads/footer-arrow_hover.png") 100% 100% no-repeat;
 }
-/* line 267, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .footer-wrap .footer-copyright {
   color: #796b46;
 }
-/* line 273, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 .footer-wrap .footer-socials .f-social-fb span {
   width: 28px;
   height: 28px;
   display: inline-block;
-  background: url("../../../ui/uploads/footer-fb.png") 100% 100% no-repeat;
+  background: url("../../../ui/uploads/glyphicons-social/glyphicons-social-31-facebook.png") 100% 100% no-repeat;
 }
-/* line 282, ../scss/main.scss */
+/* line 374, ../scss/main.scss */
 .footer-wrap .footer-socials .f-social-tw span {
   width: 28px;
   height: 28px;
   display: inline-block;
-  background: url("../../../ui/uploads/footer-tw.png") 100% 100% no-repeat;
+  background: url("../../../ui/uploads/glyphicons-social/glyphicons-social-32-twitter.png") 100% 100% no-repeat;
 }
