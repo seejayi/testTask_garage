@@ -1,2 +1,2 @@
 # testTask_garage
-tmp
+npm, grunt, angularjs, bootstrap, sass
