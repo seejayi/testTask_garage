@@ -1,0 +1,3 @@
+/app/vendor
+/node_modules
+/app/ui/styles/scss/.sass-cache
