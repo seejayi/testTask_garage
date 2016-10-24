@@ -30,7 +30,7 @@ define(function (require) {
             case 'STAGING':
             case 'DEVELOPER':
                 // staging
-                _apiPort = '3000';
+                _apiPort = '9001';
                 _apiHost = 'localhost';
                 break;
             default:

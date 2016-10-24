@@ -7,7 +7,7 @@ define(function (require) {
     'use strict';
 
     // Required APPLICATION PART
-    var Application = require('presentation/shipper/modules/appshipper');
+    var Application = require('presentation/modules/app');
     // Required SERVICES
     // Required CONTROLLERS
     // Required DIRECTIVES

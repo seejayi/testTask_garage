@@ -16,22 +16,23 @@ define(function (require) {
      */
     var angular = require('angular'),
         Config = require('config/Config'),
-        routesList = require('presentation/landing/modules/extra/routes'),
+        routesList = require('presentation/modules/routes'),
         routes;
 
     // Module that will be used in the application
     require('angular-ui-router');
 
     // Controllers that are used in routes
-    require('presentation/landing/controllers/_Partials/HeaderPartialsCtrl');
-    require('presentation/landing/controllers/_Partials/FooterPartialsCtrl');
+    require('presentation/controllers/_Partials/HeaderPartialsCtrl');
+    require('presentation/controllers/_Partials/FooterPartialsCtrl');
+    require('presentation/controllers/_Partials/AsidePartialsCtrl');
 
     /**
      * Initiate module for routes
      *
      * @return {module} new module with the {@link angular.Module} api.
      */
-    routes = angular.module('ApplicationLanding.routes', [
+    routes = angular.module('Application.routes', [
         'ui.router'
     ]);
 

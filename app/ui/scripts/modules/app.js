@@ -16,46 +16,59 @@ define(function (require) {
     // Variables
     var application,
         angular = require('angular'),
-        Config = require('config/Config'),
-        ILocaleRepository = require('ILocaleRepository');
+        Config = require('config/Config');
 
     // Module that will be used in the application
-    require('presentation/common/modules/appcommon');
-    require('presentation/landing/modules/applanding');
-    require('presentation/landing/modules/routes');
+    require('presentation/app');
+    require('presentation/routes');
+    require('presentation/ui');
     // dependensies
-    require('presentation/common/services/UserAppService');
+   
 
     /**
      * Initialize application
      *
      * @return {module} new module with the {@link angular.Module} api.
      */
-    application = angular.module('ApplicationLanding', [
-        'ApplicationLanding.loader',
-        'ApplicationLanding.routes',
-        'ApplicationCommon'
+    application = angular.module('Application', [
+        'Application.ui',
+        'Application.loader',
+        'Application.routes'
     ]);
 
+        // Add white list
+    // application.config(['$sceDelegateProvider', function ($sceDelegateProvider) {
+    //         var i, appWhiteList;
+
+    //         appWhiteList = [];
+    //         appWhiteList.push('self');
+    //         for (i in Config.whiteList) {
+    //             appWhiteList.push(Config.whiteList[i] + '/**');
+    //         }
+
+    //         $sceDelegateProvider.resourceUrlWhitelist(appWhiteList);
+
+    // }]);
+
     application.run([
-        '$rootScope', 'gettextCatalog', 'UserAppService', function ($rootScope, gettextCatalog, UserAppService) {
-            var locale;
+        '$rootScope', function ($rootScope) {
+            // var locale;
 
-            $rootScope._MODE_ = 'landing';
+            $rootScope._MODE_ = 'application';
 
-            $rootScope.$ACL = {};
-            if (!UserAppService.isLoggedIn('tp')) {
-                $rootScope.$ACL.tp = true;
-            } else if (!UserAppService.isLoggedIn('tp')) {
-                $rootScope.$ACL.sh = true;
-            } else {
-                $rootScope.$ACL.anonymus = true;
-            }
-            $rootScope.$ACL.anonymusmode = true;
+            // $rootScope.$ACL = {};
+            // if (!UserAppService.isLoggedIn('tp')) {
+            //     $rootScope.$ACL.tp = true;
+            // } else if (!UserAppService.isLoggedIn('tp')) {
+            //     $rootScope.$ACL.sh = true;
+            // } else {
+            //     $rootScope.$ACL.anonymus = true;
+            // }
+            // $rootScope.$ACL.anonymusmode = true;
 
-            locale = Config.defaultLocale;
-            ILocaleRepository.setLocale(locale);
-            gettextCatalog.setCurrentLanguage(locale);
+            // locale = Config.defaultLocale;
+            // ILocaleRepository.setLocale(locale);
+            // gettextCatalog.setCurrentLanguage(locale);
         }
     ]);
 

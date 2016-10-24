@@ -1,4 +1,5 @@
 /app/vendor
+/app/vendors
 /node_modules
 /app/ui/styles/scss/.sass-cache
 /.sass-cache/1c6f26c01c2a562299d333aa1cd506d71d9454c6/*.scssc
