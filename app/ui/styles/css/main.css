@@ -253,3 +253,56 @@
   padding: 0 15px 0 28px;
   background: url("../../../ui/uploads/pet-icon.png") no-repeat;
 }
+
+/* line 235, ../scss/main.scss */
+.footer-wrap {
+  background-color: #453c25;
+  padding: 24px 50px 23px 50px;
+}
+/* line 239, ../scss/main.scss */
+.footer-wrap .footer-nav-links {
+  text-decoration: inherit;
+  padding: 10px 0 0 0;
+}
+/* line 243, ../scss/main.scss */
+.footer-wrap .footer-nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 248, ../scss/main.scss */
+.footer-wrap .footer-nav-links :hover {
+  color: #ffdf06;
+}
+/* line 253, ../scss/main.scss */
+.footer-wrap .footer-logo-link {
+  margin-top: 6px;
+}
+/* line 256, ../scss/main.scss */
+.footer-wrap .footer-logo-link .footer-logo {
+  width: 57px;
+  height: 27px;
+  display: inline-block;
+  background: url("../../../ui/uploads/footer-arrow.png") 100% 100% no-repeat;
+}
+/* line 262, ../scss/main.scss */
+.footer-wrap .footer-logo-link :hover {
+  background: url("../../../ui/uploads/footer-arrow_hover.png") 100% 100% no-repeat;
+}
+/* line 267, ../scss/main.scss */
+.footer-wrap .footer-copyright {
+  color: #796b46;
+}
+/* line 273, ../scss/main.scss */
+.footer-wrap .footer-socials .f-social-fb span {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background: url("../../../ui/uploads/footer-fb.png") 100% 100% no-repeat;
+}
+/* line 282, ../scss/main.scss */
+.footer-wrap .footer-socials .f-social-tw span {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background: url("../../../ui/uploads/footer-tw.png") 100% 100% no-repeat;
+}
