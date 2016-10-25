@@ -1,9 +1,9 @@
-angular.module('application.rootCtrl', []).controller('rootCtrl', function($scope) {
+angular.module('app', []).controller('rootCtrl', function($scope) {
 
 //test
 $scope.tmp = 888;
   console.log($scope.tmp);
-prn($scope.tmp);	
+console.log($scope.tmp);	
 //angular-uib settings START
   $scope.oneAtATime = true;
 
