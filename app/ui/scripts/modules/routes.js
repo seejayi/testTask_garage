@@ -16,16 +16,16 @@ define(function (require) {
      */
     var angular = require('angular'),
         Config = require('config/Config'),
-        routesList = require('presentation/modules/routes'),
+        routesList = require('presentation/modules/extra/routes'),
         routes;
 
     // Module that will be used in the application
     require('angular-ui-router');
 
     // Controllers that are used in routes
-    require('presentation/controllers/_Partials/HeaderPartialsCtrl');
-    require('presentation/controllers/_Partials/FooterPartialsCtrl');
-    require('presentation/controllers/_Partials/AsidePartialsCtrl');
+    require('controllers/_Partials/HeaderPartialsCtrl');
+    require('controllers/_Partials/FooterPartialsCtrl');
+    require('controllers/_Partials/AsidePartialsCtrl');
 
     /**
      * Initiate module for routes
@@ -43,8 +43,8 @@ define(function (require) {
      * @param {$urlRouterProvider} $urlRouterProvider
      */
     routes.config([
-        '$stateProvider', '$urlRouterProvider', '$locationProvider',
-        function ($stateProvider, $urlRouterProvider, $locationProvider) {
+        '$stateProvider', '$urlRouterProvider',
+        function ($stateProvider, $urlRouterProvider) {
             // Use the HTML5 History API
             // Enable routes rewrite
             $locationProvider.html5Mode(true);

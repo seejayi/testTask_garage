@@ -19,9 +19,9 @@ define(function (require) {
         Config = require('config/Config');
 
     // Module that will be used in the application
-    require('presentation/app');
-    require('presentation/routes');
-    require('presentation/ui');
+    require('presentation/modules/app');
+    require('presentation/modules/routes');
+    require('presentation/modules/ui');
     // dependensies
    
 

@@ -5,9 +5,9 @@ require.config({
     paths: {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // PATHS FOR SOURCE FILES DEFINITION
-        'appservices': 'ui/scripts/services',
+        'appservices': 'ui/scripts',
         // 'library': 'core/lib',
-        'presentation': 'ui/scripts/modules',
+        'presentation': 'ui/scripts',
         // 'infrastructurelib': 'core/infrastructure',
         'functions': 'ui/scripts/functions',
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -104,9 +104,9 @@ require.config({
     }
 });
 
-//define(function(require) {
-//    require('presentation/tp/bootstrap');
-//});
+define(function(require) {
+   require('presentation/modules/bootstrap');
+});
 
 // switch (localStorage.getItem('mode')) {
 //     case 'tp':
