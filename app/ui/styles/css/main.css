@@ -305,7 +305,116 @@
   border-radius: 10px;
 }
 
-/* line 283, ../scss/main.scss */
+/* line 281, ../scss/main.scss */
+.content-primary-wrap {
+  margin: 0 10%;
+  padding: 5px;
+  background-color: #f5f4e2;
+  border: 1px solid #e4e3d2;
+  border-radius: 8px;
+}
+/* line 288, ../scss/main.scss */
+.content-primary-wrap .trip-heading:after {
+  content: "";
+  width: 63%;
+  position: absolute;
+  left: 196px;
+  bottom: 167px;
+  padding-bottom: 8px;
+  background-color: #e4e3d2;
+  border-radius: 50%;
+  /* border-top: 0;
+   border-right: 0;
+   border-left: 0;
+   border-bottom: 10px solid #e4e3d2;*/
+}
+/* line 303, ../scss/main.scss */
+.content-primary-wrap .panel-heading {
+  padding: 5px 15px;
+  background: linear-gradient(to right, #ffffff, #f5f4e2);
+  border-top: 2px dashed #edede9;
+  border-bottom: 2px dashed #edede9;
+  border-radius: 0;
+}
+/* line 311, ../scss/main.scss */
+.content-primary-wrap .panel-heading .trip-title {
+  color: #3d380A;
+}
+/* line 314, ../scss/main.scss */
+.content-primary-wrap .panel-heading .trip-title a {
+  color: #3d380A;
+}
+/* line 316, ../scss/main.scss */
+.content-primary-wrap .panel-heading .trip-title a:hover {
+  text-decoration: none;
+}
+/* line 319, ../scss/main.scss */
+.content-primary-wrap .panel-heading .trip-title a:focus {
+  outline: none;
+  text-decoration: none;
+}
+/* line 324, ../scss/main.scss */
+.content-primary-wrap .panel-heading .trip-title a span i {
+  top: -5px;
+  padding: 5px;
+  border: 1px solid #fedf0c;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* line 337, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-map-img {
+  width: 340px;
+  height: 225px;
+  display: inline-block;
+  background: url("../../../ui/uploads/trip-map.png") 100% 100% no-repeat;
+}
+/* line 343, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv2-img {
+  width: 340px;
+  height: 200px;
+  display: inline-block;
+  background: url("../../../ui/uploads/trip-lv-img2.png") 100% 100% no-repeat;
+}
+/* line 349, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv2-img .trip-item-details {
+  position: absolute;
+  bottom: -115px;
+  width: inherit;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 357, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv2-img .trip-item-details P {
+  padding: 15px;
+}
+/* line 362, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv2-img .trip-item-details .trip-item-link:hover {
+  text-decoration: none;
+}
+/* line 365, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv2-img .trip-item-details .trip-item-link .map-pointer {
+  width: 10px;
+  height: 15px;
+  display: inline-block;
+  background: url("../../../ui/uploads/map-pointer.png") 100% 100% no-repeat;
+}
+/* line 375, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv1-img {
+  width: 340px;
+  height: 200px;
+  display: inline-block;
+  background: url("../../../ui/uploads/trip-lv-img.png") 100% 100% no-repeat;
+}
+/* line 382, ../scss/main.scss */
+.content-primary-wrap .trip-body .trip-body-lv3-img {
+  width: 340px;
+  height: 170px;
+  display: inline-block;
+  background: url("../../../ui/uploads/trip-lv-img3.png") 100% 100% no-repeat;
+}
+
+/* line 395, ../scss/main.scss */
 .content-slave-wrap .dotted-trip-img {
   width: 195px;
   height: 75px;
@@ -313,13 +422,13 @@
   margin: 0 auto;
   background: url("../../../ui/uploads/dotted-trip.png") 100% 100% no-repeat;
 }
-/* line 293, ../scss/main.scss */
+/* line 405, ../scss/main.scss */
 .content-slave-wrap p {
   width: 300px;
   height: auto;
   margin: 0 auto;
 }
-/* line 298, ../scss/main.scss */
+/* line 410, ../scss/main.scss */
 .content-slave-wrap .new-contest-btn {
   width: 269px;
   height: 50px;
@@ -332,52 +441,52 @@
   margin: 15px 0 20px 0;
 }
 
-/* line 326, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 .footer-wrap {
   background-color: #453c25;
   padding: 24px 50px 23px 50px;
 }
-/* line 330, ../scss/main.scss */
+/* line 442, ../scss/main.scss */
 .footer-wrap .footer-nav-links {
   text-decoration: inherit;
   padding: 10px 0 0 0;
 }
-/* line 334, ../scss/main.scss */
+/* line 446, ../scss/main.scss */
 .footer-wrap .footer-nav-links li a {
   color: #fff;
   text-decoration: none;
 }
-/* line 339, ../scss/main.scss */
+/* line 451, ../scss/main.scss */
 .footer-wrap .footer-nav-links :hover {
   color: #ffdf06;
 }
-/* line 344, ../scss/main.scss */
+/* line 456, ../scss/main.scss */
 .footer-wrap .footer-logo-link {
   margin-top: 6px;
 }
-/* line 347, ../scss/main.scss */
+/* line 459, ../scss/main.scss */
 .footer-wrap .footer-logo-link .footer-logo {
   width: 57px;
   height: 27px;
   display: inline-block;
   background: url("../../../ui/uploads/footer-arrow.png") 100% 100% no-repeat;
 }
-/* line 353, ../scss/main.scss */
+/* line 465, ../scss/main.scss */
 .footer-wrap .footer-logo-link :hover {
   background: url("../../../ui/uploads/footer-arrow_hover.png") 100% 100% no-repeat;
 }
-/* line 358, ../scss/main.scss */
+/* line 470, ../scss/main.scss */
 .footer-wrap .footer-copyright {
   color: #796b46;
 }
-/* line 364, ../scss/main.scss */
+/* line 476, ../scss/main.scss */
 .footer-wrap .footer-socials .f-social-fb span {
   width: 28px;
   height: 28px;
   display: inline-block;
   background: url("../../../ui/uploads/glyphicons-social/glyphicons-social-31-facebook.png") 100% 100% no-repeat;
 }
-/* line 373, ../scss/main.scss */
+/* line 485, ../scss/main.scss */
 .footer-wrap .footer-socials .f-social-tw span {
   width: 28px;
   height: 28px;

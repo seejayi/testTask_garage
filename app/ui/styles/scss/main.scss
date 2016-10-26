@@ -277,6 +277,118 @@
 	}
 }
 
+//////////////////////////////////////////////////content-trip-accordion///////////////////////////
+.content-primary-wrap {
+    margin: 0 10%;
+    padding: 5px;
+    background-color: #f5f4e2;
+    border: 1px solid #e4e3d2;
+    border-radius: 8px;
+
+    .trip-heading:after {
+    	content: "";
+	    width: 63%;
+	    position: absolute;
+    	left: 196px;
+    	bottom: 167px;
+	    padding-bottom: 8px;
+    	background-color: #e4e3d2;
+	    border-radius: 50%;
+	   /* border-top: 0;
+	    border-right: 0;
+	    border-left: 0;
+	    border-bottom: 10px solid #e4e3d2;*/
+    }
+
+    .panel-heading {
+    	padding: 5px 15px;
+    	background: linear-gradient(to right, #ffffff, #f5f4e2);
+    	border-top: 2px dashed #edede9;
+    	border-bottom: 2px dashed #edede9;
+    	border-radius: 0;
+
+
+	    .trip-title {
+	    	color: #3d380A;
+
+	    	a{
+	    		color: #3d380A;
+	    		&:hover{
+	    			text-decoration: none;
+	    		}
+	    		&:focus{
+	    			outline: none;
+	    			text-decoration: none;
+	    		}
+	    		span{
+	    			i{
+	    				top: -5px;
+	    				padding: 5px;
+	    				border: 1px solid #fedf0c;
+    					border-radius: 50%;
+    					background-color: #fff;
+	    			}
+	    		}
+	    	}
+	    }
+    }
+    .trip-body{
+
+    	.trip-body-map-img{
+    		width: 340px;
+    		height: 225px;
+    		display: inline-block;
+    		background: url('../../../ui/uploads/trip-map.png') 100% 100% no-repeat;
+    	}
+    	.trip-body-lv2-img{
+    		width: 340px;
+    		height: 200px;
+    		display: inline-block;
+    		background: url('../../../ui/uploads/trip-lv-img2.png') 100% 100% no-repeat;
+
+    		.trip-item-details{
+    			position: absolute;
+    			bottom: -115px;
+    			width: inherit;
+    			background-color: #fff;
+    			border-bottom-left-radius: 10px; 
+    			border-bottom-right-radius: 10px;
+    			
+    			P{
+    				padding: 15px;
+    			}
+    			.trip-item-link{
+
+    				&:hover{
+    					text-decoration: none;
+    				}
+	    			.map-pointer{
+	    				width: 10px;
+    					height: 15px;
+    					display: inline-block;
+	    				background: url('../../../ui/uploads/map-pointer.png') 100% 100% no-repeat;
+	    			}
+    			}
+    		}
+
+    	}
+    	.trip-body-lv1-img{
+    		width: 340px;
+    		height: 200px;
+    		display: inline-block;
+    		background: url('../../../ui/uploads/trip-lv-img.png') 100% 100% no-repeat;
+
+    	}
+    	.trip-body-lv3-img{
+    		width: 340px;
+    		height: 170px;
+    		display: inline-block;
+    		background: url('../../../ui/uploads/trip-lv-img3.png') 100% 100% no-repeat;
+
+    	}
+    }
+}
+
 
 .content-slave-wrap {
 

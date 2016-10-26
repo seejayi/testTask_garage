@@ -105,7 +105,7 @@ require.config({
 });
 
 define(function(require) {
-   require('presentation/modules/bootstrap');
+   require('presentation/bootstrap');
 });
 
 // switch (localStorage.getItem('mode')) {

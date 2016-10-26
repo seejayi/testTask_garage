@@ -23,9 +23,9 @@ define(function (require) {
     require('angular-ui-router');
 
     // Controllers that are used in routes
-    require('controllers/_Partials/HeaderPartialsCtrl');
-    require('controllers/_Partials/FooterPartialsCtrl');
-    require('controllers/_Partials/AsidePartialsCtrl');
+    // require('controllers/_Partials/HeaderPartialsCtrl');
+    // require('controllers/_Partials/FooterPartialsCtrl');
+    // require('controllers/_Partials/AsidePartialsCtrl');
 
     /**
      * Initiate module for routes
