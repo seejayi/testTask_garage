@@ -285,7 +285,7 @@
     border: 1px solid #e4e3d2;
     border-radius: 8px;
 
-    .trip-heading:after {
+/*    .trip-heading:after {
     	content: "";
 	    width: 63%;
 	    position: absolute;
@@ -294,11 +294,7 @@
 	    padding-bottom: 8px;
     	background-color: #e4e3d2;
 	    border-radius: 50%;
-	   /* border-top: 0;
-	    border-right: 0;
-	    border-left: 0;
-	    border-bottom: 10px solid #e4e3d2;*/
-    }
+    }*/
 
     .panel-heading {
     	padding: 5px 15px;
@@ -333,17 +329,20 @@
 	    }
     }
     .trip-body{
-
+    	padding-bottom: 100px;
+    	
     	.trip-body-map-img{
     		width: 340px;
     		height: 225px;
     		display: inline-block;
     		background: url('../../../ui/uploads/trip-map.png') 100% 100% no-repeat;
+    		margin-bottom: 45px;
     	}
     	.trip-body-lv2-img{
     		width: 340px;
     		height: 200px;
     		display: inline-block;
+    		position: relative;
     		background: url('../../../ui/uploads/trip-lv-img2.png') 100% 100% no-repeat;
 
     		.trip-item-details{
@@ -372,19 +371,79 @@
     		}
 
     	}
+    	.trip-timeline{
+    		width: 100px;
+    		height: 364px;
+    		display: inline-block;
+    		position: absolute;
+    		top: 45px;
+    		background: url('../../../ui/uploads/trip-timeline.png') 100% 100% no-repeat;
+    	}
     	.trip-body-lv1-img{
     		width: 340px;
     		height: 200px;
+    		position: relative;
     		display: inline-block;
     		background: url('../../../ui/uploads/trip-lv-img.png') 100% 100% no-repeat;
+    		margin-bottom: 95px;
+
+    		.trip-item-details{
+    			position: absolute;
+    			bottom: -80px;
+    			width: inherit;
+    			background-color: #fff;
+    			border-bottom-left-radius: 10px; 
+    			border-bottom-right-radius: 10px;
+    			
+    			P{
+    				padding: 15px;
+    			}
+    			.trip-item-link{
+
+    				&:hover{
+    					text-decoration: none;
+    				}
+	    			.map-pointer{
+	    				width: 10px;
+    					height: 15px;
+    					display: inline-block;
+	    				background: url('../../../ui/uploads/map-pointer.png') 100% 100% no-repeat;
+	    			}
+    			}
+    		}
 
     	}
     	.trip-body-lv3-img{
     		width: 340px;
     		height: 170px;
+    		position: relative;
     		display: inline-block;
     		background: url('../../../ui/uploads/trip-lv-img3.png') 100% 100% no-repeat;
 
+    		.trip-item-details{
+    			position: absolute;
+    			bottom: -98px;
+    			width: inherit;
+    			background-color: #fff;
+    			border-bottom-left-radius: 10px; 
+    			border-bottom-right-radius: 10px;
+    			
+    			P{
+    				padding: 15px;
+    			}
+    			.trip-item-link{
+
+    				&:hover{
+    					text-decoration: none;
+    				}
+	    			.map-pointer{
+	    				width: 10px;
+    					height: 15px;
+    					display: inline-block;
+	    				background: url('../../../ui/uploads/map-pointer.png') 100% 100% no-repeat;
+	    			}
+    			}
+    		}
     	}
     }
 }
