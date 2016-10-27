@@ -1,4 +1,4 @@
-/////////////////////////////////////header
+/////////////////////////////////////header///////////////////////////////////
 
 .navbar-default{
 	background-image: none;
@@ -148,7 +148,7 @@
 	
 }
 
-/////////////////////////////////////////////////content-header
+/////////////////////////////////////////////////content-header//////////////////////////////////
 
 .no-padding {
 	padding: 0;
@@ -278,6 +278,7 @@
 }
 
 //////////////////////////////////////////////////content-trip-accordion///////////////////////////
+
 .content-primary-wrap {
     margin: 0 10%;
     padding: 5px;
@@ -329,7 +330,7 @@
 	    }
     }
     .trip-body{
-    	padding-bottom: 100px;
+    	padding-bottom: 150px;
     	
     	.trip-body-map-img{
     		width: 340px;
@@ -347,7 +348,7 @@
 
     		.trip-item-details{
     			position: absolute;
-    			bottom: -115px;
+    			bottom: -155px;
     			width: inherit;
     			background-color: #fff;
     			border-bottom-left-radius: 10px; 
@@ -357,6 +358,16 @@
     				padding: 15px;
     			}
     			.trip-item-link{
+    				width: 100%;
+				    height: auto;
+				    display: inline-block;
+    				color: #ec4b36;
+    				padding: 8px 5px 8px 15px;
+    				margin-bottom: 18px;
+    				background: linear-gradient(to right, #ffffff, #f5f4e2);
+			    	border-top: 1px dashed #edede9;
+			    	border-bottom: 1px dashed #edede9;
+			    	border-radius: 0;
 
     				&:hover{
     					text-decoration: none;
@@ -385,11 +396,11 @@
     		position: relative;
     		display: inline-block;
     		background: url('../../../ui/uploads/trip-lv-img.png') 100% 100% no-repeat;
-    		margin-bottom: 95px;
+    		margin-bottom: 120px;
 
     		.trip-item-details{
     			position: absolute;
-    			bottom: -80px;
+    			bottom: -115px;
     			width: inherit;
     			background-color: #fff;
     			border-bottom-left-radius: 10px; 
@@ -399,6 +410,16 @@
     				padding: 15px;
     			}
     			.trip-item-link{
+    				width: 100%;
+				    height: auto;
+				    display: inline-block;
+				    padding: 8px 5px 8px 15px;
+				    margin-bottom: 18px;
+    				color: #ec4b36;
+    				background: linear-gradient(to right, #ffffff, #f5f4e2);
+			    	border-top: 1px dashed #edede9;
+			    	border-bottom: 1px dashed #edede9;
+			    	border-radius: 0;
 
     				&:hover{
     					text-decoration: none;
@@ -422,7 +443,7 @@
 
     		.trip-item-details{
     			position: absolute;
-    			bottom: -98px;
+    			bottom: -135px;
     			width: inherit;
     			background-color: #fff;
     			border-bottom-left-radius: 10px; 
@@ -432,6 +453,16 @@
     				padding: 15px;
     			}
     			.trip-item-link{
+    				width: 100%;
+				    height: auto;
+				    display: inline-block;
+				    padding: 8px 5px 8px 15px;
+				    margin-bottom: 18px;
+    				color: #ec4b36;
+    				background: linear-gradient(to right, #ffffff, #f5f4e2);
+			    	border-top: 1px dashed #edede9;
+			    	border-bottom: 1px dashed #edede9;
+			    	border-radius: 0;
 
     				&:hover{
     					text-decoration: none;
@@ -492,7 +523,7 @@
 
 
 
-//////////////////////////////////footer
+//////////////////////////////////footer///////////////////////////////////////////////
 
 .footer-wrap {
 	background-color: #453c25;
