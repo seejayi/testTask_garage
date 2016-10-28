@@ -1,3 +1,4 @@
+//angular.module('ui.bootstrap.demo', ['ngAnimate', 'ui.bootstrap']);
 angular.module('app', []).controller('rootCtrl', function($scope) {
 
 //test
