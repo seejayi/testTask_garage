@@ -587,25 +587,103 @@
 
 ///////////////////////////details-sidebar/////////////////////////////////////////////////////////////////////////////////////////
 
+
 .btn-sidebar {
 	width: 20px;
 	height: 30px;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
-	position: relative;
+	position: absolute;
 	top: 75px;
-	left: 0px;
+	left: 560px;
 	background-color: #fede06;
+	&.collapsed{
+		left: 0px;
+	}
+	i{
+		right: 6px;	
+	}
 }
 
 .sidebar-wrap{
 	width: 560px;
-	height: auto;
+	height: 100%;
+	overflow-y: scroll; 
 	position: absolute;
 	left: 0;
 	
 	.header-datepicker{
+		margin: 40px 0 30px 0;
+		.btn-group {
+			margin: 10px 0;
+			.btn-daypick {
+				font-size: 14px;
+				color: #453c25;
+				background-color: #fff;
+				border: 1px solid #ffdf06;
+				
+				padding: 5px 40px;
 
+				&.active {
+					background-color: #ffdf06;
+				}
+			}
+		}
+		i:hover{
+			cursor: pointer;
+		}
+	}
+	.panel-group {
+		padding: 10px;
+		border: 1px solid grey;
+		border-radius: 10px;
+
+		.panel-heading {
+
+		}
+		.sidebar-item-img {
+		
+			width: 470px;
+			height: 260px;
+			background: url('../../../ui/uploads/details-sidebar-pasta.png') 100% 100% no-repeat;
+		
+		}
+		.collapse-btn {
+			i{
+				left: 45%;
+			}
+		}
+	}
+
+	.waytrip-icon {
+		padding: 13px 0 36px 30px;
+		position: relative;
+		&:before{
+			content: " ";
+			width: 1px;
+			height: 35px;
+			background-color: #fede06;
+			position: absolute;
+			bottom: 70px;
+			left: 47px;
+		}
+
+		span{
+			i{
+				padding: 10px;
+				border: 1px solid #fede06;
+				border-radius: 50%;
+			}
+		}
+		&:after{
+			content: " ";
+			background-color: #fede06;
+			width: 1px;
+			height: 35px;
+			position: absolute;
+			top: 50px;
+			left: 47px;
+		}
 	}
 	
 }

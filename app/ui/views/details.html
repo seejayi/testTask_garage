@@ -32,18 +32,35 @@
     <div class="row">
       <nav class="navbar navbar-default">
         <div class="col-sm-6">
-           <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<!--           <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1">
+            <ul class="list-group">
+              <li>
+                <a href="#" class="header-logo"></a>
+              </li>
+              <li>
+                <a href="#" class="">Itineraries</a>
+              </li>
+              <li>
+                <a href="#" class="">Contests</a>
+              </li>
+              <li>
+                <a href="#" class="">John Kennedy</a>
+              </li>
+              <li>
+                <a href="#" class="">Messages</a>
+              </li>
+            </ul>
+          </div> -->
+           <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
               <li><a href="#">Details</a></li>
             </ul>
-          </div>
         </div>
         
         <div class="col-sm-3 pull-right">
@@ -58,44 +75,99 @@
 
   <section class="container-fluid">
 
-      <button class="btn btn-sidebar" type="button" data-toggle="collapse" data-target="#details_info_pop" data-placement="right" aria-expanded="false" aria-controls="details_info_pop">
+      <button class="btn btn-sidebar collapsed" type="button" data-toggle="collapse" data-target="#details_info_pop" data-placement="right" aria-expanded="false" aria-controls="details_info_pop">
         <i class="glyphicon glyphicon-menu-right"></i>
       </button>
       <div class="collapse" id="details_info_pop" data-placement="right">
         <div class="sidebar-wrap" role="tablist" class="panel-group" id="sidebar_accordion">
 
-          <div class="header-datepicker">
+          <div class="header-datepicker text-center">
+            <i class="glyphicon glyphicon-menu-left"></i>
             <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary active">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> June 24
+              <label class="btn btn-daypick active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Jun 24
               </label>
-              <label class="btn btn-primary">
-                <input type="radio" name="options" id="option2" autocomplete="off"> June 25
+              <label class="btn btn-daypick">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Jun 25
               </label>
-              <label class="btn btn-primary">
-                <input type="radio" name="options" id="option3" autocomplete="off"> June 26
+              <label class="btn btn-daypick">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Jun 26
               </label>
             </div>
+            <i class="glyphicon glyphicon-menu-right"></i>
           </div>
 
           <div class="sidebar-details-item-wrap">
+
             <div class="panel-group">
-              <div class="panel-heading" role="tab" id="sidebar-item1">
+              <div class="panel-heading" role="tab" id="heading-sidebar-item1">
                 <h4 class="panel-title">
-                  <a href="#sidebar-item1" role="button" data-toggle="collapse">
+                  <a href="#collapse-sidebar-item1" role="button" aria-controls="collapse-sidebar-item1" data-toggle="collapse">
+                    <i class="glyphicon glyphicon-cutlery"></i>
                     Trattoria Da Ropeton
+                    <span class="pull-right lunch-time">
+                      <i class="glyphicon glyphicon-time"></i>
+                      10.00
+                    </span>
+                    <h5 class="panel-subtitle">
+                      Via Fontana del Ferro, 1, Verona, Italy
+                    </h5>
                   </a>
                 </h4>
               </div>
-              <div class="panel-collapse" role="tabpanel" id="sidebar-item1">
+              <div id="collapse-sidebar-item1" class="panel-collapse collapse" role="tabpanel" data-toggle="collapse" aria-expanded="true" aria-labelledby="heading-sidebar-item1">
+                <div class="sidebar-item-img"></div>
                 <p>
                   Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
                 </p>
+                <a href="#collapse-sidebar-item1" class="collapse-btn" role="button" aria-controls="collapse-sidebar-item1" data-toggle="collapse">
+                  <i class="glyphicon glyphicon-menu-up"></i>
+                </a>
               </div>
             </div>
+
           </div>
+
+          <div class="waytrip-icon">
+            <span>
+              <i class="glyphicon glyphicon-road"></i>
+            </span>
+          </div>
+
+           <div class="sidebar-details-item-wrap">
+
+            <div class="panel-group">
+              <div class="panel-heading" role="tab" id="heading-sidebar-item2">
+                <h4 class="panel-title">
+                  <a href="#collapse-sidebar-item2" role="button" aria-controls="collapse-sidebar-item2" data-toggle="collapse">
+                    <i class="glyphicon glyphicon-cutlery"></i>
+                    Trattoria Da Ropeton
+                    <span class="pull-right lunch-time">
+                      <i class="glyphicon glyphicon-time"></i>
+                      12.00
+                    </span>
+                    <h5 class="panel-subtitle">
+                      Via Fontana del Ferro, 1, Verona, Italy
+                    </h5>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-sidebar-item2" class="panel-collapse collapse" role="tabpanel" data-toggle="collapse" aria-expanded="true" aria-labelledby="heading-sidebar-item2">
+                <div class="sidebar-item-img"></div>
+                <p>
+                  Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                </p>
+                <a href="#collapse-sidebar-item2" class="collapse-btn" role="button" aria-controls="collapse-sidebar-item2" data-toggle="collapse">
+                  <i class="glyphicon glyphicon-menu-up"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
+
   </section>
 
 <!-- <script type="text/javascript" src="../scripts/GoogleMaps.js"></script> -->
