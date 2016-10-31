@@ -56,10 +56,50 @@
 
   </header>
 
-  <section class="aside-menu container">
-    <div></div>
+  <section class="container-fluid">
+
+      <button class="btn btn-sidebar" type="button" data-toggle="collapse" data-target="#details_info_pop" data-placement="right" aria-expanded="false" aria-controls="details_info_pop">
+        <i class="glyphicon glyphicon-menu-right"></i>
+      </button>
+      <div class="collapse" id="details_info_pop" data-placement="right">
+        <div class="sidebar-wrap" role="tablist" class="panel-group" id="sidebar_accordion">
+
+          <div class="header-datepicker">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> June 24
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> June 25
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> June 26
+              </label>
+            </div>
+          </div>
+
+          <div class="sidebar-details-item-wrap">
+            <div class="panel-group">
+              <div class="panel-heading" role="tab" id="sidebar-item1">
+                <h4 class="panel-title">
+                  <a href="#sidebar-item1" role="button" data-toggle="collapse">
+                    Trattoria Da Ropeton
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse" role="tabpanel" id="sidebar-item1">
+                <p>
+                  Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
-<script type="text/javascript" src="../scripts/GoogleMaps.js"></script>
+
+<!-- <script type="text/javascript" src="../scripts/GoogleMaps.js"></script> -->
+
 </body>
 
 </html>

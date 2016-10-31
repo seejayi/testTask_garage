@@ -582,3 +582,30 @@
 		}
 	}
 }
+
+
+
+///////////////////////////details-sidebar/////////////////////////////////////////////////////////////////////////////////////////
+
+.btn-sidebar {
+	width: 20px;
+	height: 30px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;
+	top: 75px;
+	left: 0px;
+	background-color: #fede06;
+}
+
+.sidebar-wrap{
+	width: 560px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	
+	.header-datepicker{
+
+	}
+	
+}

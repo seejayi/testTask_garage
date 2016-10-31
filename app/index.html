@@ -10,14 +10,13 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-      <script src="vendor/angular/angular.js"></script>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="ui/styles/css/main.css">
@@ -32,7 +31,7 @@
     <div class="row">
       <nav class="navbar navbar-default">
         <div class="col-xs-6">
-           <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+           <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -42,28 +41,28 @@
             <span class="overview-icon" aria-hidden="true"></span>
             Overview
           </button>
-          <button type="button" class="btn btn-details" aria-label="Left Align">
+          <button type="button" ui-sref="details" class="btn btn-details" aria-label="Left Align">
             <span class="details-icon" aria-hidden="true"></span>
             Details
           </button>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="dropup">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropup
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
+          <div class="collapse" id="bs-example-navbar-collapse-1" data-placement="right" role="tablist">
+            <div class="panel-group">
+              <div class="panel-heading" role="tab" id="nav1">
+                <h4 class="panet-title">
+                  <a href="#nav1" class="" role="button" data-toggle="collapse" aria-controls="nav1">
+                    John Kenedi
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-collapse" role="tabpanel" id="nav1">
+          
+                <ul class="list-group">
+                  <li class="active"><a href="#">Itineraries <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Contests</a></li>
+                </ul>
+              </div>
             </div>
-<!--             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Details</a></li>
-            </ul> -->
+
           </div>
         </div>
         
@@ -164,44 +163,6 @@
       <div class="col-md-7">
         <div class="user-overview-wrap">
           <h4>Overview</h4>
-<div ng-controller="rootCtrl">
-  <script type="text/ng-template" id="group-template.html">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title" style="color:#fa39c3">
-          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
-            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
-              {{heading}}
-            </span>
-          </a>
-        </h4>
-      </div>
-      <div class="panel-collapse collapse" uib-collapse="!isOpen">
-        <div class="panel-body" style="text-align: right" ng-transclude></div>
-      </div>
-    </div>
-  </script>
-
-  <p>
-    <button type="button" class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
-    <button type="button" class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
-  </p>
-
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" ng-model="oneAtATime">
-      Open only one at a time
-    </label>
-  </div>
-  <uib-accordion close-others="oneAtATime">
-    <div uib-accordion-group class="panel-default" heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-      This content is straight in the template.
-    </div>
-    <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">
-      {{group.content}}
-    </div>
-</uib-accordion>
-
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
@@ -214,15 +175,13 @@
 
     <div class="row content-primary-wrap">
 
-      <uib-accordion close-others="oneAtATime">
-        <div role="tablist" class="panel-group" uib-accordion-group
-             is-open="status.isFirstOpen" 
-             is-disabled="status.isFirstDisabled">
 
-          <div role="tab" aria-selected="false" class="panel-heading trip-heading" ng-keypress="toggleOpen($event)">
+        <div role="tablist" class="panel-group" id="accordion">
+
+          <div role="tab" class="panel-heading trip-heading">
             <h4 class="trip-title text-center">
-              <a role="button" data-toggle="collapse" href="" aria-expanded="false"  class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading" ng-disabled="isDisabled" uib-tabindex-toggle="">
-                <span uib-accordion-heading="Day 1" ng-class="{'open': status.isFirstOpen}" class="ng-binding">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1"  class="accordion-toggle">
+                <span  class="ng-binding">
                   <span class="ng-scope">
                     Day 1
                   </span>
@@ -232,7 +191,7 @@
             </h4>
           </div>
 
-          <div aria-hidden="false" role="tabpanel" class="panel-collapse in collapse" uib-collapse="!isOpen" aria-expanded="true">
+          <div role="tabpanel" class="panel-collapse in collapse" id="collapse1">
             <div class="panel-body trip-body">
 
               <div class="col-sm-6">
@@ -280,8 +239,45 @@
             </div>
           </div>
 
+              <div role="tab" class="panel-heading trip-heading">
+            <h4 class="trip-title text-center">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2"  class="accordion-toggle">
+                <span  class="ng-binding">
+                  <span class="ng-scope">
+                    Day 2
+                  </span>
+                  <i class="pull-right glyphicon glyphicon-menu-down" ng-class="{'glyphicon-menu-up': status.open, 'glyphicon-chevron-down': !status.open}" style=""></i>
+                </span>
+              </a>
+            </h4>
+          </div>
+
+          <div role="tabpanel" class="panel-collapse in collapse" id="collapse2">
+            <div class="panel-body trip-body">Day2
+
+            </div>
+          </div>
+
+  <div role="tab" class="panel-heading trip-heading">
+            <h4 class="trip-title text-center">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3"  class="accordion-toggle">
+                <span  class="ng-binding">
+                  <span class="ng-scope">
+                    Day 3
+                  </span>
+                  <i class="pull-right glyphicon glyphicon-menu-down" ng-class="{'glyphicon-menu-up': status.open, 'glyphicon-chevron-down': !status.open}" style=""></i>
+                </span>
+              </a>
+            </h4>
+          </div>
+
+          <div role="tabpanel" class="panel-collapse in collapse" id="collapse3">
+            <div class="panel-body trip-body">Day3
+            </div>
+          </div>
+
         </div>
-      </uib-accordion>
+
 
     </div>
 
@@ -334,7 +330,7 @@
 
   
 
-  <script src="vendor/requirejs/require.js" data-main="config/main.js"></script>
+
 
 
   <script src="ui/scripts/rootCtrl.js"></script>

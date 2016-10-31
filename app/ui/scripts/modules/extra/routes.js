@@ -29,7 +29,7 @@ define(function (require) {
             'name': 'details',
             'url': '/app/details',
             'title': 'Details',
-            'templateUrl': '/app/ui/views/overview.html'
+            'templateUrl': '/app/ui/views/details.html'
         }
         // {
         //     'name': 'deliveryAdd',
