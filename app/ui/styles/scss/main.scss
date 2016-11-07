@@ -24,11 +24,11 @@ header.container-fluid{
 				display: inline-block;
 				border: none;
 				color: #453c25;
-				background-color: #C8b485 !important;
+				background-color: #C8b485;
 					
 				.icon-bar {
 						position: relative;
-						background-color: #453c25 !important; 
+						background-color: #453c25; 
 				}
 				&:hover{
 					.icon-bar:nth-child(2){
@@ -62,7 +62,31 @@ header.container-fluid{
 						position: relative;
 						top: -60px;
 						left: 360px;
+						color: #fff;
+						background-color: #942033;
 						transition: right 1s ease-out 0.5s;
+						
+						.icon-bar:nth-child(3){
+							display: none;
+						}
+						.icon-bar:nth-child(2){
+							background-color: #fff;
+							top: 3px;
+							    -moz-transform: rotate(45deg);
+							    -ms-transform: rotate(45deg);
+							    -webkit-transform: rotate(45deg); 
+							    -o-transform: rotate(45deg); 
+							    transform: rotate(45deg);
+						}
+						.icon-bar:nth-child(4){
+							background-color: #fff;
+							top: -3px;
+								-moz-transform: rotate(-45deg);
+							    -ms-transform: rotate(-45deg);
+							    -webkit-transform: rotate(-45deg); 
+							    -o-transform: rotate(-45deg); 
+							    transform: rotate(-45deg);
+						}
 						
 						+ul.nav.navbar-nav.navbar-static-top{
 							position: relative;
@@ -85,18 +109,21 @@ header.container-fluid{
 					background: linear-gradient(to bottom right, #4c4132, #776845);
 				}
 				.header-logo {
-				    width: inherit;
+				    width: 168px;
+				    height: 28px;
 					background: url('../../../ui/uploads/header-logo.png') 3% 50% no-repeat;
+					padding: 30px 0 30px 35px;
 				}
 
 				div{
 					width: inherit;
-					height: 60px;
+					/*height: 60px;*/
 					border-bottom: 1px solid #4c412d;
 					background: linear-gradient(to bottom right, #4c4132, #776845);
 
 					
 						.menu-item-title{
+							padding: 8px;
 							.itineraries-title{
 								margin-top: 0;
 								&:before{
@@ -152,7 +179,7 @@ header.container-fluid{
 							display: inline-block;
 							background-image: url('../../../ui/uploads/user-avatar.png');
 							border-radius: 50%;
-							padding-left: 25px;
+							margin: 3px 8px 3px 25px;
 						}
 						a{
 							font-size: 18px;
