@@ -48,7 +48,7 @@ header.container-fluid{
 				position: relative;
 				left: -15px;
 				top: 0;
-				background: linear-gradient(to bottom right, #4c4132, #776845);
+				background: linear-gradient(to right, #4c4132, #776845);
 
 				&.collapsing {
 					-webkit-transition: right 1s ease-out 0.5s;
@@ -65,11 +65,18 @@ header.container-fluid{
 						color: #fff;
 						background-color: #942033;
 						transition: right 1s ease-out 0.5s;
+						&:hover{
+							background-color: #a42338;
+						}
+						&:focus{
+
+						}
 						
 						.icon-bar:nth-child(3){
 							display: none;
 						}
 						.icon-bar:nth-child(2){
+							width: 18px;
 							background-color: #fff;
 							top: 3px;
 							    -moz-transform: rotate(45deg);
@@ -79,6 +86,7 @@ header.container-fluid{
 							    transform: rotate(45deg);
 						}
 						.icon-bar:nth-child(4){
+							width: 18px;
 							background-color: #fff;
 							top: -3px;
 								-moz-transform: rotate(-45deg);
@@ -100,39 +108,68 @@ header.container-fluid{
   						opacity: 0.6;
 					}
 				}
-		
-					/* linear-gradient(to top, rgba(30,87,153,0), rgba(30,87,153,0.8), rgba(30,87,153,1),
-                      	rgba(30,87,153,1), rgba(41,137,216,1), rgba(30,87,153,1), rgba(30,87,153,1),
-                      	rgba(30,87,153,0.8),rgba(30,87,153,0))*/
+
 
 				.left-side-menu-list{
-					background: linear-gradient(to bottom right, #4c4132, #776845);
+					background: linear-gradient(to right, #4c4132, #776845);
+					div:nth-child(2){
+						border-bottom: 1px solid #4f4332;
+					}
+					div:nth-child(3){
+						border-bottom: 1px solid #4f4332;
+					}
+					div:nth-child(5){
+						border-bottom: 1px solid #4f4332;
+					}
+					.user-profile-list{
+						list-style-type: none;
+						li{
+							padding: 8px;
+							i{
+    							color: #a39b8b;
+    							padding-right: 30px;
+							}
+							a{
+								font-size: 14px;
+    							font-family: "OpenSans";
+    							color: #a39b8b;
+    							&:hover{
+    								text-decoration: none;
+    								color: inherit;
+    							}
+							}
+
+						}
+					}
 				}
-				.header-logo {
-				    width: 168px;
-				    height: 28px;
-					background: url('../../../ui/uploads/header-logo.png') 3% 50% no-repeat;
-					padding: 30px 0 30px 35px;
+				.menu-logo-wrap{
+					background: linear-gradient(to bottom right, #473e2d, #4e432f);
+					.header-logo {
+					    width: 168px;
+					    height: 28px;
+						background: url('../../../ui/uploads/header-logo.png') 3% 50% no-repeat;
+						padding: 30px 0 30px 35px;
+					}
 				}
 
 				div{
 					width: inherit;
 					/*height: 60px;*/
-					border-bottom: 1px solid #4c412d;
-					background: linear-gradient(to bottom right, #4c4132, #776845);
-
+					/*border-bottom: 1px solid #4c412d;*/
 					
-						.menu-item-title{
-							padding: 8px;
+					.menu-item-title{
+							padding: 20px;
+
 							.itineraries-title{
-								margin-top: 0;
+								margin: 0;
+
 								&:before{
 									content:" ";
 									width: 26px;
 									height: 26px;
 									position: absolute;
 									background-image: url('../../../ui/uploads/itinerary-menu-icon.png');
-									margin-left: 35px;
+									margin-left: 15px;
 								}
 								
 							}
@@ -144,7 +181,7 @@ header.container-fluid{
 									height: 26px;
 									position: absolute;
 									background-image: url('../../../ui/uploads/contests-menu-icon.png');
-									margin-left: 35px;
+									margin-left: 15px;
 								}
 								
 							}
@@ -156,14 +193,14 @@ header.container-fluid{
 									height: 20px;
 									position: absolute;
 									background-image: url('../../../ui/uploads/messages-menu-icon.png');
-									margin-left: 35px;
+									margin-left: 15px;
 								}
 							}
 							a{
 								font-size: 18px;
 								font-family: "OpenSans";
-								color: #818181;
-								padding: 0 0 0 80px;
+								color: #c3beb4;
+								padding: 0 0 0 60px;
 								&:hover{
 									text-decoration: none;
 									color: inherit;
@@ -172,7 +209,7 @@ header.container-fluid{
 						
 					}
 					.user-title {
-						margin-top: 0;
+						margin: 0;
 						.user-avatar{
 							width: 40px;
 							height: 40px;
@@ -184,13 +221,16 @@ header.container-fluid{
 						a{
 							font-size: 18px;
 							font-family: "OpenSans";
-							color: #818181;
+							color: #c3beb4;
+							padding-bottom: 12px;
+    						vertical-align: bottom;
 								&:hover{
 									text-decoration: none;
 									color: inherit;
 								}
 						}
 					}
+
 				}
 			}
 		}

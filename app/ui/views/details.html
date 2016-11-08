@@ -20,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../styles/css/main.css">
 
 
@@ -36,9 +37,8 @@
             <div class="collapse panel-collapse left-side-menu-wrap" data-toggle="collapse" id="sidebar-accordion" aria-labelledby="sidebar-accordion">
             <div class="left-side-menu-list" id="sidebar_menu" role="tablist" aria-multiselectable="true">
 
-                <div class="">
-                  <div class="header-logo">
-                  </div>
+                <div class="menu-logo-wrap">
+                  <div class="header-logo"></div>
                 </div>
                 <div class="">
                   <div class="menu-item-title">
@@ -59,30 +59,35 @@
                   <div class="" role="tab" id="user_profile">
                     <h5 class="user-title">
                       <span class="user-avatar"></span>
-                      <a href="#user_profile_list" role="button" data-toggle="collapse" aria-expended="false" aria-controls="user-profile">John Kennedy</a>
+                      <a href="#user_profile_list">John Kennedy</a>
                     </h5>
                   </div>
-                  <div id="user_profile_list" class="panel-collapse collapse in" role="tabpanel"  aria-labelledby="user_profile" data-toggle="collapse">
+                  <!-- <div id="user_profile_list" class="panel-collapse collapse in" role="tabpanel"  aria-labelledby="user_profile" data-toggle="collapse"> -->
                     <div class="">
-                      <ul class="list-group">
+                      <ul class="user-profile-list">
                         <li>
-                          <a href="">My itineraries</a>
+                          <i class="fa fa-plane" aria-hidden="true"></i>
+                          <a href="#">My itineraries</a>
                         </li>
                         <li>
-                          <a href="">My contests</a>
+                          <i class="fa fa-compass" aria-hidden="true"></i>
+                          <a href="#">My contests</a>
                         </li>
                         <li>
-                          <a href="">Settings</a>
+                          <i class="fa fa-cog" aria-hidden="true"></i>
+                          <a href="#">Settings</a>
                         </li>
                         <li>
-                          <a href="">Payments</a>
+                          <i class="fa fa-money" aria-hidden="true"></i>
+                          <a href="#">Payments</a>
                         </li>
                         <li>
-                          <a href="">Log out</a>
+                          <i class="fa fa-power-off" aria-hidden="true"></i>
+                          <a href="#">Log out</a>
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  <!-- </div> -->
                 </div>
 
                 <div class="menu-item-title">
