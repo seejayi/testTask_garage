@@ -319,17 +319,34 @@
 
   </section>
     <!-- Gmaps_API: AIzaSyDgklGf56wZoKZGCYaxoC5Q6MJDf5Vat1Q -->
+    <!-- 45.4470699,11.0054878 -->
     <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 45.4470699, lng: 11.0054878};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 18,
           center: uluru
         });
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+          '<div id="bodyContent">'+
+          '<p><b>Trattoria Da Ropeton</b></p>'+
+          '</div>'+
+          '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
         var marker = new google.maps.Marker({
           position: uluru,
-          map: map
+          map: map,
+          title: 'Trattoria Da Ropeton'
         });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
       }
     </script>
     <script async defer

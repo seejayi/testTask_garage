@@ -849,7 +849,7 @@ header.container-fluid .row .header-socials-wrap .social-tw:focus {
   background: url("../../../ui/uploads/glyphicons-social/glyphicons-social-32-twitter.png") 100% 100% no-repeat;
 }
 
-/* line 836, ../scss/main.scss */
+/* line 835, ../scss/main.scss */
 .btn-sidebar {
   width: 20px;
   height: 30px;
@@ -860,22 +860,23 @@ header.container-fluid .row .header-socials-wrap .social-tw:focus {
   left: 560px;
   background-color: #fede06;
 }
-/* line 845, ../scss/main.scss */
+/* line 844, ../scss/main.scss */
 .btn-sidebar.collapsed {
   left: 0px;
 }
-/* line 848, ../scss/main.scss */
+/* line 847, ../scss/main.scss */
 .btn-sidebar i {
   right: 6px;
 }
 
-/* line 852, ../scss/main.scss */
+/* line 851, ../scss/main.scss */
 #details_info_pop.collapse.in {
   position: fixed;
-  top: 150px;
+  top: 50px;
   left: 0;
   width: 560px;
   height: 100%;
+  background-color: #fafaf2;
 }
 
 /* line 859, ../scss/main.scss */
