@@ -98,41 +98,8 @@
                   </div>
                   <div id="user_profile_msgs" class="panel-collapse collapse" role="tabpanel"  aria-labelledby="user_profile_msgs" data-toggle="collapse">
                     <div class="msgs-list-body">
-                      <div class="itinerary-list">
-                        <ul class="">
-                          <li>
-                            msg1
-                          </li>
-                          <li>
-                            My cvzx
-                          </li>
-                          <li>
-                            Ssdasdждывлажфдывла
-                            dfasdf
-                            sdfasdf
-                            sdafasd
-                          </li>
-                          <li>
-                           sdasdas
-                          </li>
-                          <li>
-                            asdqwe
-                          </li>
-                          <li>
-                            asdqwe
-                          </li>
-                          <li>
-                            asdqwe
-                            asdfasdf
-                            sdf
-                          </li>
-                          <li>
-                            asdqwe
-                          </li>
-                        </ul>
-                      </div>
-
                       <div class="contests-list">
+                        <p>Contest</p>
                         <ul class="">
                           <li>
                             msg1
@@ -189,6 +156,71 @@
                           </li>
                         </ul>
                       </div>
+                      <div class="itinerary-list">
+                        <p>Itineraries</p>
+                        <ul class="">
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            Ssdasdждывлажфдывла
+                            dfasdf
+                            sdfasdf
+                            sdafasd
+                          </li>
+                          <li>
+                           sdasdas
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                            asdfasdf
+                            sdf
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                            asdfasdf
+                            sdf
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                        </ul>
+                      </div>
+
+
                     </div>
                   </div>
                 </div>
@@ -210,8 +242,8 @@
 
         </div>
         
-        <div class="col-md-3 pull-right">
-          <span>Share this itinerary:</span>
+        <div class="col-md-3 pull-right header-socials-wrap">
+          <span class="share-social-text">Share this itinerary:</span>
           <button type="button" class="social-fb"></button>
           <button type="button" class="social-tw"></button>
         </div>
@@ -220,7 +252,7 @@
 
   </header>
 
-      <div id="map"></div>
+  <div id="map"></div>
   <section class="container-fluid">
 
 
@@ -330,23 +362,25 @@
         var contentString = '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+          '<h1 id="firstHeading" class="firstHeading">Trattoria Da Ropeton</h1>'+
           '<div id="bodyContent">'+
-          '<p><b>Trattoria Da Ropeton</b></p>'+
+          '<p>Via Fontana del Ferro, 1, Verona, Italy</p>'+
+          '<p>+390458030040</p>'+
+          '<p>tratoriadaropeton.it</p>'+
           '</div>'+
           '</div>';
 
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-          title: 'Trattoria Da Ropeton'
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
         });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                title: 'Trattoria Da Ropeton'
+              });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
       }
     </script>
     <script async defer

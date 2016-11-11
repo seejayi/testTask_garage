@@ -72,7 +72,7 @@ header.container-fluid{
 				    transition: right 1s ease-out 0.5s;
 				}
 				&.collapse.in{
-
+					height: 100%;
 					+.navbar-toggle{
 						position: absolute;
 						top: -8px;
@@ -225,6 +225,10 @@ header.container-fluid{
 								}
 							}
 							.msgs-list-body{
+								height: 100%;
+								position: absolute;
+								left: 0;
+								overflow-y: scroll;
 								background-color: #544c37;
   								opacity: 0.702;
 								.itinerary-list{
@@ -418,7 +422,6 @@ header.container-fluid{
 				width: 23px;
 				height: 20px;
 				padding: 0 15px 0 30px;
-				/*border-right: 1px ridge #fff;*/
 				background: url('../../../ui/uploads/family-icon.png') no-repeat;
 				&:after{
 					content:" ";
