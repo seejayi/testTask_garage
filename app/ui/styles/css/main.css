@@ -435,7 +435,7 @@ header.container-fluid .row .btn-overview .overview-icon {
   height: 14px;
   position: absolute;
   top: 23px;
-  left: 82px;
+  left: 68px;
   background-image: url("../../../ui/uploads/overview-icon.png");
 }
 /* line 425, ../scss/main.scss */
@@ -477,7 +477,7 @@ header.container-fluid .row .btn-details .details-icon {
   height: 16px;
   position: absolute;
   top: 20px;
-  left: 232px;
+  left: 215px;
   background-image: url("../../../ui/uploads/details-icon.png");
 }
 /* line 461, ../scss/main.scss */
@@ -1149,4 +1149,16 @@ header.container-fluid .row .header-socials-wrap .social-tw:focus {
   position: absolute;
   top: 50px;
   left: 67px;
+}
+
+@media (max-width: 768px) {
+  /* line 1129, ../scss/main.scss */
+  .header-socials-wrap {
+    display: none;
+  }
+
+  /* line 1132, ../scss/main.scss */
+  .navbar-nav {
+    margin: 0;
+  }
 }
