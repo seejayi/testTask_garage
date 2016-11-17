@@ -238,10 +238,20 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-              <ul class="nav navbar-nav navbar-static-top">
-                <li><a href="#">Overview</a></li>
-                <li class="active"><a href="#">Details<span class="sr-only">(current)</span></a></li>
-              </ul>
+              <div class="nav navbar-nav navbar-static-top">
+              
+                  <button type="button" class="btn btn-overview" aria-label="Left Align">
+                    <span class="overview-icon" aria-hidden="true"></span>
+                  Overview
+                  </button>
+                
+                
+                  <button type="button" ui-sref="details" class="btn btn-details active" aria-label="Left Align">
+                    <span class="details-icon" aria-hidden="true"></span>
+                  Details
+                  </button>
+                
+              </div>
 
           </div>
 
@@ -249,8 +259,12 @@
         
         <div class="col-md-3 pull-right header-socials-wrap">
           <span class="share-social-text">Share this itinerary:</span>
-          <button type="button" class="social-fb"></button>
-          <button type="button" class="social-tw"></button>
+          <button type="button" class="social-fb">
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="social-tw">
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+          </button>
         </div>
       </nav>
     </div>
