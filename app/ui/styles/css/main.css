@@ -1172,8 +1172,18 @@ header.container-fluid .row .header-socials-wrap .social-tw:focus {
   .header-socials-wrap {
     display: none;
   }
-
   /* line 1147, ../scss/main.scss */
+  .header-socials-wrap.overview {
+    top: 60px !important;
+    display: block;
+    color: #fff;
+  }
+  /* line 1152, ../scss/main.scss */
+  .header-socials-wrap .share-social-text {
+    color: #fff !important;
+  }
+
+  /* line 1156, ../scss/main.scss */
   .navbar-nav {
     margin: 0;
   }

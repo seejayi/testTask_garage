@@ -1143,6 +1143,15 @@ header.container-fluid{
 @media (max-width: 768px){
 	.header-socials-wrap {
 		display: none;
+
+		&.overview{
+			top: 60px !important;
+			display: block;
+			color: #fff;
+		}
+			.share-social-text{
+				color: #fff !important;
+			}
 	}
 	.navbar-nav{
 		margin: 0;

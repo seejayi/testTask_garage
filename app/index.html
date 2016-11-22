@@ -20,56 +20,226 @@
 
 
     <link rel="stylesheet" type="text/css" href="ui/styles/css/main.css">
+    <link rel="stylesheet" type="text/css" href="ui/fonts/font-awesome/css/font-awesome.min.css">
 
 
 </head>
 
-<body ng-app="app" ng-controller="rootCtrl">
+<body>
 
   <header class="container-fluid">
 
     <div class="row">
       <nav class="navbar navbar-default">
-        <div class="col-xs-6">
-           <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <button type="button" class="btn btn-overview active" aria-label="Left Align">
-            <span class="overview-icon" aria-hidden="true"></span>
-            Overview
-          </button>
-          <button type="button" ui-sref="details" class="btn btn-details" aria-label="Left Align">
-            <span class="details-icon" aria-hidden="true"></span>
-            Details
-          </button>
-          <div class="collapse" id="bs-example-navbar-collapse-1" data-placement="right" role="tablist">
-            <div class="panel-group">
-              <div class="panel-heading" role="tab" id="nav1">
-                <h4 class="panet-title">
-                  <a href="#nav1" class="" role="button" data-toggle="collapse" aria-controls="nav1">
-                    John Kenedi
-                  </a>
-                </h4>
-              </div>
-              <div class="panel-collapse" role="tabpanel" id="nav1">
-          
-                <ul class="list-group">
-                  <li class="active"><a href="#">Itineraries <span class="sr-only">(current)</span></a></li>
-                  <li><a href="#">Contests</a></li>
-                </ul>
-              </div>
+        <div class="col-xs-6-visible">
+          <div class="content-header">
+            <div class="collapse panel-collapse left-side-menu-wrap" data-toggle="collapse" id="sidebar-accordion" aria-labelledby="sidebar-accordion">
+            <div class="left-side-menu-list" id="sidebar_menu" role="tablist" aria-multiselectable="true">
+
+                <div class="menu-logo-wrap">
+                  <div class="header-logo"></div>
+                </div>
+                <div class="">
+                  <div class="menu-item-title">
+                    <h5 class="itineraries-title">
+                      <a href="#">Itineraraies</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="menu-item-title">
+                    <h5 class="contests-title">
+                      <a href="#">Contests</a>
+                    </h5>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="" role="tab" id="user_profile">
+                    <h5 class="user-title">
+                      <span class="user-avatar"></span>
+                      <a href="#user_profile_list">John Kennedy</a>
+                    </h5>
+                  </div>
+                  <!-- <div id="user_profile_list" class="panel-collapse collapse in" role="tabpanel"  aria-labelledby="user_profile" data-toggle="collapse"> -->
+                    <div class="">
+                      <ul class="user-profile-list">
+                        <li>
+                          <i class="fa fa-plane" aria-hidden="true"></i>
+                          <a href="#">My itineraries</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-compass" aria-hidden="true"></i>
+                          <a href="#">My contests</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-cog" aria-hidden="true"></i>
+                          <a href="#">Settings</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-money" aria-hidden="true"></i>
+                          <a href="#">Payments</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-power-off" aria-hidden="true"></i>
+                          <a href="#">Log out</a>
+                        </li>
+                      </ul>
+                    </div>
+                  <!-- </div> -->
+                </div>
+
+                <div class="menu-item-title">
+                  <div class="messages-wrap" role="tab">
+                    <h5 class="msgs-title">
+                      <a href="#user_profile_msgs" role="button" data-toggle="collapse" aria-expended="false" aria-controls="user-profile">Messages</a>
+                      <span class="badge pull-right">+13</span>
+                    </h5>
+                  </div>
+                  <div id="user_profile_msgs" class="panel-collapse collapse" role="tabpanel"  aria-labelledby="user_profile_msgs" data-toggle="collapse">
+                    <div class="msgs-list-body">
+
+                      <div class="contests-list">
+                        <p>Contest</p>
+                        <ul class="">
+                          <li>
+                            msg1
+                            <span>+1</span>
+                          </li>
+                          <li>
+                            My cvzxasdfasdfasdflkjasdklfjhsdalkfjhasdlkjfhlaskd
+                            adsgfsadf
+                            <span>+2</span>
+                          </li>
+                          <li>
+                            Ssdasd
+                          </li>
+                          <li>
+                           sdasdas
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            assdfasdf
+                            wrtywert234
+                            __fsafd
+                            vxzcdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="itinerary-list">
+                        <p>Itineraries</p>
+                        <ul class="">
+                          <li>
+                            msg1
+                            <span>+13</span>
+                          </li>
+                          <li>
+                            My cvzx
+                            <span>+8</span>
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                            asdfasdf
+                            sdf
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
             </div>
+            </div>
+            
+             <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#sidebar-accordion" aria-controls="sidebar-accordion">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+              <div id="menuTop" class="nav navbar-nav navbar-static-top">
+                  <button type="button" class="btn btn-overview" aria-label="Left Align">
+                    <span class="overview-icon" aria-hidden="true"></span>
+                  Overview
+                  </button>
+                
+                  <button type="button" ui-sref="details" class="btn btn-details active" aria-label="Left Align">
+                    <span class="details-icon" aria-hidden="true"></span>
+                  Details
+                  </button>
+              </div>
+
           </div>
 
         </div>
         
-        <div class="col-xs-3 pull-right header-socials-wrap">
+        <div class="col-md-3 header-socials-wrap overview">
           <span class="share-social-text">Share this itinerary:</span>
-          <button type="button" class="social-fb"></button>
-          <button type="button" class="social-tw"></button>
+          <button type="button" class="social-fb">
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="social-tw">
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+          </button>
         </div>
       </nav>
     </div>
@@ -161,12 +331,15 @@
         </div>
       </div>
       <div class="col-md-7">
-        <div class="user-overview-wrap">
+        <div class="user-overview-wrap" >
           <h4>Overview</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <p>
+          <a href="#overview_text" class="collapse-btn" role="button" aria-controls="overview_text" data-toggle="collapse">
+            <i class="glyphicon glyphicon-menu-down"></i>
+          </a>
+          <p id="overview_text" aria-expanded="true" class="collapse">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
@@ -252,7 +425,7 @@
             </h4>
           </div>
 
-          <div role="tabpanel" class="panel-collapse in collapse" id="collapse2">
+          <div role="tabpanel" class="panel-collapse collapse" id="collapse2">
             <div class="panel-body trip-body">Day2
 
             </div>
@@ -271,7 +444,7 @@
             </h4>
           </div>
 
-          <div role="tabpanel" class="panel-collapse in collapse" id="collapse3">
+          <div role="tabpanel" class="panel-collapse collapse" id="collapse3">
             <div class="panel-body trip-body">Day3
             </div>
           </div>
@@ -327,14 +500,6 @@
     </div>
 
   </footer>
-
-  
-
-
-
-
-  <script src="ui/scripts/rootCtrl.js"></script>
-
 
 </body>
 
