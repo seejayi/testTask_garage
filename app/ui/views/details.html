@@ -238,7 +238,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-              <div class="nav navbar-nav navbar-static-top">
+              <div id="menuTop" class="nav navbar-nav navbar-static-top">
               
                   <button type="button" class="btn btn-overview" aria-label="Left Align">
                     <span class="overview-icon" aria-hidden="true"></span>
@@ -256,7 +256,7 @@
 
         </div>
         
-        <div class="col-xs-3-hidden pull-right header-socials-wrap">
+        <div class="col-xs-3-hidden header-socials-wrap">
           <span class="share-social-text">Share this itinerary:</span>
           <button type="button" class="social-fb">
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
@@ -271,6 +271,7 @@
   </header>
 
   <div id="map"></div>
+
   <section class="container-fluid">
 
 
@@ -413,7 +414,8 @@
         var uluru = {lat: 45.4470699, lng: 11.0054878};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 18,
-          center: uluru
+          center: uluru,
+          mapTypeControl: false
         });
         var contentString = '<div id="content">'+
           '<div id="siteNotice">'+
@@ -442,13 +444,7 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgklGf56wZoKZGCYaxoC5Q6MJDf5Vat1Q&callback=initMap">
     </script>
-  <script type="text/javascript">
-    $('#user_profile_msgs').on('shown.bs.collapse', function () {
-    document.getElementById('user_profile_msgs').scrollIntoView();
-  });
-  </script>
 
-<!-- <script type="text/javascript" src="../scripts/GoogleMaps.js"></script> -->
 
 </body>
 

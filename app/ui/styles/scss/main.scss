@@ -91,7 +91,7 @@ header.container-fluid{
 				border: none;
 				color: #453c25;
 				background-color: #C8b485;
-				margin-top: 14px;
+				margin: 14px 10px 0 10px;
 					
 				.icon-bar {
 						position: relative;
@@ -128,7 +128,7 @@ header.container-fluid{
 					+.navbar-toggle{
 						position: absolute;
 						top: -14px;
-						left: 340px;
+						left: 315px;
 						color: #fff;
 						background-color: #942033;
 						padding: 25px;
@@ -172,8 +172,8 @@ header.container-fluid{
 						}
 						
 						+div.nav.navbar-nav.navbar-static-top{
-							position: relative;
-						    bottom: 498px;
+							position: fixed;
+						    top: 0;
 						    left: 392px;
 							transition: right 1s ease-out 0.5s;
 							.btn-overview{
@@ -305,10 +305,10 @@ header.container-fluid{
 								margin-right: 35px;
 							}
 							.msgs-list-body{
-								height: 103%;
+								height: calc(100% + 100px);
 								position: absolute;
 								left: 0;
-								top: 484px;
+								top: 498px;
 								overflow-y: scroll;
 								overflow-x: hidden; 
 								background-color: #574d37;
@@ -417,7 +417,7 @@ header.container-fluid{
 				height: 14px;
 				position: absolute;
 				top: 23px;
-				left: 68px;
+				left: 74px;
 				background-image: url('../../../ui/uploads/overview-icon.png');
 			}
 		}
@@ -454,11 +454,14 @@ header.container-fluid{
 				height: 16px;
 				position: absolute;
 				top: 20px;
-				left: 215px;
+				left: 220px;
 				background-image: url('../../../ui/uploads/details-icon.png');
 			}
 		}
 		.header-socials-wrap {
+			position: fixed;
+			top: 0;
+			right: 10px;
 			padding: 20px 120px 0 0;
 			text-align: right;
 			.share-social-text {
@@ -936,35 +939,47 @@ header.container-fluid{
 ///////////////////////////details-sidebar/////////////////////////////////////////////////////////////////////////////////////////
 
 .btn-sidebar {
+	max-height: 100%;
 	width: 20px;
 	height: 30px;
+	display: block;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
 	position: absolute;
 	top: 75px;
 	left: 560px;
 	background-color: #fede06;
+
 	&.collapsed{
 		left: 0px;
+		i{
+			display: inline-block;
+			right: 6px;	
+		}
+		span{
+			display: none;
+		}
+	}
+
+	span{
+		display: inline-block;
+		right: 6px;
 	}
 	i{
-		right: 6px;	
-	}
-	span{
 		display: none;
 	}
-	#details_info_pop.collapse.in{
-		.btn-sidebar{
-			span{
-				display: inline-block;
-				right: 6px;
-			}
-			i{
-				display: none;
-			}
-		}
-		
+
+	&:before{
+		content: " ";
+		width: 3px;
+		height: 100%;
+		background-color: #fede06;
+	    position: fixed;
+	    left: 0;
+    	top: 0;
+    
 	}
+
 }
 #details_info_pop.collapse.in{
 	position: fixed;
