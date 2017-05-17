@@ -50,6 +50,7 @@ html, body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: open_sansregular;
 }
 #map{
 	height: calc(100% - 50px);
@@ -308,7 +309,7 @@ header.container-fluid{
 								height: calc(100% + 100px);
 								position: absolute;
 								left: 0;
-								top: 498px;
+								top: 497px;
 								overflow-y: scroll;
 								overflow-x: hidden; 
 								background-color: #574d37;
@@ -513,12 +514,19 @@ header.container-fluid{
 	padding: 0;
 	background-image: url('../../../ui/uploads/content-header-lv.png');
 	background-size: 100% 100%;
+
 	.content-header-text {
 		position: absolute;
 		bottom: 25px;
 		padding: 0 5% 0 20%;
 		color: #fff;
+
+		.trip-title{
+			font-family: open_sanslight;
+		}
 		.content-header-breadcrumbs {
+			font-family: open_sansregular;
+
 			.text-uppercase {
 				padding-right: 20px;
 			}
@@ -587,6 +595,9 @@ header.container-fluid{
 
 			}
 			.media-body {
+				.media-heading{
+					font-family: open_sansbold;
+				}
 				.user-rating{
 					margin-left: 0;
 					li{
@@ -627,16 +638,32 @@ header.container-fluid{
 			}
 		}
 	}
+	.user-overview-wrap{
+		padding-top: 15px;
+		h5{
+			font-family: open_sansbold;
+		}
+		a{
+			padding-left: 50%;
+		}
+		a:hover{
+			color: #d9534f;
+		}
+	}
 }
 
 //////////////////////////////////////////////////content-trip-accordion///////////////////////////
 
 .content-primary-wrap {
     margin: 0 10%;
-    padding: 5px;
+    padding: 20px 0;
     background-color: #f5f4e2;
     border: 1px solid #e4e3d2;
     border-radius: 8px;
+
+    .panel-group{
+    	margin-bottom: 0;
+    }
 
 /*    .trip-heading:after {
     	content: "";
@@ -650,6 +677,7 @@ header.container-fluid{
     }*/
 
     .panel-heading {
+    	font-family: open_sansbold;
     	padding: 5px 15px;
     	background: linear-gradient(to right, #ffffff, #f5f4e2);
     	border-top: 2px dashed #edede9;
@@ -660,6 +688,26 @@ header.container-fluid{
 	    .trip-title {
 	    	color: #3d380A;
 
+	    	a.collapsed{
+	    		color: #3d380A;
+	    		&:hover{
+	    			text-decoration: none;
+	    		}
+	    		&:focus{
+	    			outline: none;
+	    			text-decoration: none;
+	    		}
+	    		span{
+	    			i{
+	    				top: -5px;
+	    				padding: 5px;
+	    				border: 1px solid #fedf0c;
+    					border-radius: 50%;
+    					background-color: #fff;
+    					transform: none;
+	    			}
+	    		}
+	    	}
 	    	a{
 	    		color: #3d380A;
 	    		&:hover{
@@ -676,6 +724,7 @@ header.container-fluid{
 	    				border: 1px solid #fedf0c;
     					border-radius: 50%;
     					background-color: #fff;
+    					transform: rotate(180deg);
 	    			}
 	    		}
 	    	}
@@ -739,7 +788,8 @@ header.container-fluid{
     		height: 364px;
     		display: inline-block;
     		position: absolute;
-    		top: 45px;
+    		top: 140px;
+    		left: 385px;
     		background: url('../../../ui/uploads/trip-timeline.png') 100% 100% no-repeat;
     	}
     	.trip-body-lv1-img{
@@ -836,13 +886,13 @@ header.container-fluid{
 
 	.dotted-trip-img {
 		width: 195px;
-		height: 75px;
+		height: 100px;
 		display: block;
 		margin: 0 auto;
 		background: url('../../../ui/uploads/dotted-trip.png') 100% 100% no-repeat;
 	}
 	h4 {
-
+		font-family: open_sansbold;
 	}
 	p{
 		width: 300px;
@@ -853,7 +903,6 @@ header.container-fluid{
 		width: 269px;
 		height: 50px;
 		font-size: 16px;
-		font-family: "OpenSans";
 		color: rgb(61, 56, 10);
     	background-color: #ffdf06;
   		box-shadow: 0px 2px 0px 0px rgba(223, 196, 10, 0.004);
@@ -870,6 +919,12 @@ header.container-fluid{
 
   		}
 	}
+	.learn-more-link{
+		font-size: 12px;
+		text-decoration: underline;
+		color: #3d380a;
+		padding-left: 15px;
+	}
 }
 
 
@@ -879,7 +934,7 @@ header.container-fluid{
 
 .footer-wrap {
 	background-color: #453c25;
-	padding: 24px 50px 23px 50px;
+	padding: 25px 50px 6px 50px;
 
 	.footer-nav-links{
 		text-decoration: inherit;
@@ -915,21 +970,14 @@ header.container-fluid{
 
 	.footer-socials {
 		.f-social-fb{
-			span{
-
-				width: 28px;
-				height: 28px;
-				display: inline-block;
-				background: url('../../../ui/uploads/glyphicons-social/glyphicons-social-31-facebook.png') 100% 100% no-repeat;
+			padding-right: 8px;
+			i{
+				color: #fff;
 			}
 		}
 		.f-social-tw{
-			span{
-
-				width: 28px;
-				height: 28px;
-				display: inline-block;
-				background: url('../../../ui/uploads/glyphicons-social/glyphicons-social-32-twitter.png') 100% 100% no-repeat;
+			i{
+				color: #fff;
 			}
 		}
 	}
@@ -1155,5 +1203,17 @@ header.container-fluid{
 	}
 	.navbar-nav{
 		margin: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.trip-body {
+		.col-sm-5 {
+			display: inline-table;
+			margin-top: 165px;
+		}
+		.trip-timeline {
+			display: none !important;
+		}
 	}
 }
