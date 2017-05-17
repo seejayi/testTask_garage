@@ -20,7 +20,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="ui/styles/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/main.css">
 
 
 </head>
@@ -31,35 +32,396 @@
 
     <div class="row">
       <nav class="navbar navbar-default">
-        <div class="col-sm-6">
-           <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Details</a></li>
-            </ul>
+        <div class="col-xs-6-visible">
+          <div class="content-header">
+            <div class="collapse panel-collapse left-side-menu-wrap" data-toggle="collapse" id="sidebar-accordion" aria-labelledby="sidebar-accordion">
+            <div class="left-side-menu-list" id="sidebar_menu" role="tablist" aria-multiselectable="true">
+
+                <div class="menu-logo-wrap">
+                  <div class="header-logo"></div>
+                </div>
+                <div class="">
+                  <div class="menu-item-title">
+                    <h5 class="itineraries-title">
+                      <a href="#">Itineraraies</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="menu-item-title">
+                    <h5 class="contests-title">
+                      <a href="#">Contests</a>
+                    </h5>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="" role="tab" id="user_profile">
+                    <h5 class="user-title">
+                      <span class="user-avatar"></span>
+                      <a href="#user_profile_list">John Kennedy</a>
+                    </h5>
+                  </div>
+                  <!-- <div id="user_profile_list" class="panel-collapse collapse in" role="tabpanel"  aria-labelledby="user_profile" data-toggle="collapse"> -->
+                    <div class="">
+                      <ul class="user-profile-list">
+                        <li>
+                          <i class="fa fa-plane" aria-hidden="true"></i>
+                          <a href="#">My itineraries</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-compass" aria-hidden="true"></i>
+                          <a href="#">My contests</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-cog" aria-hidden="true"></i>
+                          <a href="#">Settings</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-money" aria-hidden="true"></i>
+                          <a href="#">Payments</a>
+                        </li>
+                        <li>
+                          <i class="fa fa-power-off" aria-hidden="true"></i>
+                          <a href="#">Log out</a>
+                        </li>
+                      </ul>
+                    </div>
+                  <!-- </div> -->
+                </div>
+
+                <div class="menu-item-title">
+                  <div class="messages-wrap" role="tab">
+                    <h5 class="msgs-title">
+                      <a href="#user_profile_msgs" role="button" data-toggle="collapse" aria-expended="false" aria-controls="user-profile">Messages</a>
+                      <span class="badge pull-right">+13</span>
+                    </h5>
+                  </div>
+                  <div id="user_profile_msgs" class="panel-collapse collapse" role="tabpanel"  aria-labelledby="user_profile_msgs" data-toggle="collapse">
+                    <div class="msgs-list-body">
+                      <div class="contests-list">
+                        <p>Contest</p>
+                        <ul class="">
+                          <li>
+                            msg1
+                            <span>+1</span>
+                          </li>
+                          <li>
+                            My cvzxasdfasdfasdflkjasdklfjhsdalkfjhasdlkjfhlaskd
+                            adsgfsadf
+                            <span>+2</span>
+                          </li>
+                          <li>
+                            Ssdasd
+                          </li>
+                          <li>
+                           sdasdas
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            asdqwea.fdgalds
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            sadfgkahkl
+                            asdqwe
+                          </li>
+                          <li>
+                            assdfasdf
+                            wrtywert234
+                            __fsafd
+                            vxzcdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="itinerary-list">
+                        <p>Itineraries</p>
+                        <ul class="">
+                          <li>
+                            msg1
+                            <span>+13</span>
+                          </li>
+                          <li>
+                            My cvzx
+                            <span>+8</span>
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            msg1
+                          </li>
+                          <li>
+                            My cvzx
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                          <li>
+                            asdqwe
+                            asdfasdf
+                            sdf
+                          </li>
+                          <li>
+                            asdqwe
+                          </li>
+                        </ul>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            </div>
+             <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#sidebar-accordion" aria-controls="sidebar-accordion">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+              <div id="menuTop" class="nav navbar-nav navbar-static-top">
+                  <button type="button" class="btn btn-overview" aria-label="Left Align">
+                    <span class="overview-icon" aria-hidden="true"></span>
+                  Overview
+                  </button>
+                
+                  <button type="button" ui-sref="details" class="btn btn-details active" aria-label="Left Align">
+                    <span class="details-icon" aria-hidden="true"></span>
+                  Details
+                  </button>
+              </div>
+
           </div>
+
         </div>
         
-        <div class="col-sm-3 pull-right">
-          <span>Share this itinerary:</span>
-          <button type="button" class="social-fb"></button>
-          <button type="button" class="social-tw"></button>
+        <div class="col-xs-3-hidden header-socials-wrap">
+          <span class="share-social-text">Share this itinerary:</span>
+          <button type="button" class="social-fb">
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="social-tw">
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+          </button>
         </div>
       </nav>
     </div>
 
   </header>
 
-  <section class="aside-menu container">
-    <div></div>
+  <div id="map"></div>
+
+  <section class="container-fluid">
+
+
+      <button class="btn btn-sidebar collapsed" type="button" data-toggle="collapse" data-target="#details_info_pop" data-placement="right" aria-expanded="false" aria-controls="details_info_pop">
+        <i class="glyphicon glyphicon-menu-right"></i>
+        <span class="glyphicon glyphicon-menu-left"></span>
+      </button>
+      <div class="collapse" id="details_info_pop" data-placement="right">
+        <div class="sidebar-wrap" role="tablist" class="panel-group" id="sidebar_accordion">
+
+          <div class="header-datepicker text-center">
+            <i class="glyphicon glyphicon-menu-left"></i>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-daypick active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Jun 24
+              </label>
+              <label class="btn btn-daypick">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Jun 25
+              </label>
+              <label class="btn btn-daypick">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Jun 26
+              </label>
+            </div>
+            <i class="glyphicon glyphicon-menu-right"></i>
+          </div>
+
+          <div class="sidebar-details-item-wrap">
+
+            <div class="panel-group">
+              <div class="panel-heading" role="tab" id="heading-sidebar-item1">
+                <h4 class="panel-title">
+                  <a href="#collapse-sidebar-item1" role="button" aria-controls="collapse-sidebar-item1" data-toggle="collapse">
+                    <span class="fork-icon"></span>
+                    Trattoria Da Ropeton
+                    <span class="pull-right lunch-time">
+                      <i class="glyphicon glyphicon-time"></i>
+                      10.00
+                    </span>
+                    <h5 class="panel-subtitle">
+                      Via Fontana del Ferro, 1, Verona, Italy
+                    </h5>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-sidebar-item1" class="panel-collapse collapse" role="tabpanel" data-toggle="collapse" aria-expanded="true" aria-labelledby="heading-sidebar-item1">
+                <div class="sidebar-item-img"></div>
+                <p>
+                  Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                </p>
+                <a href="#collapse-sidebar-item1" class="collapse-btn" role="button" aria-controls="collapse-sidebar-item1" data-toggle="collapse">
+                  <i class="glyphicon glyphicon-menu-up"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="waytrip-icon">
+            <span>
+              <i class="fa fa-car"></i>
+            </span>
+          </div>
+
+           <div class="sidebar-details-item-wrap">
+
+            <div class="panel-group">
+              <div class="panel-heading" role="tab" id="heading-sidebar-item2">
+                <h4 class="panel-title">
+                  <a href="#collapse-sidebar-item2" role="button" aria-controls="collapse-sidebar-item2" data-toggle="collapse">
+                    <span class="basket-icon"></span>
+                    Trattoria Da Ropeton
+                    <span class="pull-right lunch-time">
+                      <i class="glyphicon glyphicon-time"></i>
+                      12.00
+                    </span>
+                    <h5 class="panel-subtitle">
+                      Via Fontana del Ferro, 1, Verona, Italy
+                    </h5>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-sidebar-item2" class="panel-collapse collapse" role="tabpanel" data-toggle="collapse" aria-expanded="true" aria-labelledby="heading-sidebar-item2">
+                <div class="sidebar-item-img"></div>
+                <p>
+                  Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                </p>
+                <a href="#collapse-sidebar-item2" class="collapse-btn" role="button" aria-controls="collapse-sidebar-item2" data-toggle="collapse">
+                  <i class="glyphicon glyphicon-menu-up"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="waytrip-icon">
+            <span>
+              <i class="fa fa-bus"></i>
+            </span>
+          </div>
+
+           <div class="sidebar-details-item-wrap">
+
+            <div class="panel-group">
+              <div class="panel-heading" role="tab" id="heading-sidebar-item3">
+                <h4 class="panel-title">
+                  <a href="#collapse-sidebar-item3" role="button" aria-controls="collapse-sidebar-item3" data-toggle="collapse">
+                    <span class="black-pet-icon"></span>
+                    Trattoria Da Ropeton
+                    <span class="pull-right lunch-time">
+                      <i class="glyphicon glyphicon-time"></i>
+                      12.00
+                    </span>
+                    <h5 class="panel-subtitle">
+                      Via Fontana del Ferro, 1, Verona, Italy
+                    </h5>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-sidebar-item3" class="panel-collapse collapse" role="tabpanel" data-toggle="collapse" aria-expanded="true" aria-labelledby="heading-sidebar-item3">
+                <div class="sidebar-item-img"></div>
+                <p>
+                  Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                </p>
+                <a href="#collapse-sidebar-item3" class="collapse-btn" role="button" aria-controls="collapse-sidebar-item2" data-toggle="collapse">
+                  <i class="glyphicon glyphicon-menu-up"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
   </section>
-<script type="text/javascript" src="../scripts/GoogleMaps.js"></script>
+    <!-- Gmaps_API: AIzaSyDgklGf56wZoKZGCYaxoC5Q6MJDf5Vat1Q -->
+    <!-- 45.4470699,11.0054878 -->
+    <script>
+      function initMap() {
+        var uluru = {lat: 45.4470699, lng: 11.0054878};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru,
+          mapTypeControl: false
+        });
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Trattoria Da Ropeton</h1>'+
+          '<div id="bodyContent">'+
+          '<p>Via Fontana del Ferro, 1, Verona, Italy</p>'+
+          '<p>+390458030040</p>'+
+          '<p>tratoriadaropeton.it</p>'+
+          '</div>'+
+          '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                title: 'Trattoria Da Ropeton'
+              });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgklGf56wZoKZGCYaxoC5Q6MJDf5Vat1Q&callback=initMap">
+    </script>
+
+
 </body>
 
 </html>

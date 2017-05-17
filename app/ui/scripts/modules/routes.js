@@ -47,10 +47,15 @@ define(function (require) {
         function ($stateProvider, $urlRouterProvider) {
             // Use the HTML5 History API
             // Enable routes rewrite
+              $stateProvider.state('details', {
+                templateUrl: 'app/ui/views/details.html'
+              });
+
             $locationProvider.html5Mode(true);
 
             // if state is not registered in app redirect to
             $urlRouterProvider.otherwise("/app");
+
 
             var i;
 
@@ -83,6 +88,7 @@ define(function (require) {
                         route.resolve[i] = routesListItem.resolve[i];
                     }
                 }
+
 
 //                route.resolve = {
 //                    load : ['$q', function($q) {

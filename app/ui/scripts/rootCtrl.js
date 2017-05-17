@@ -1,5 +1,10 @@
+//angular.module('ui.bootstrap.demo', ['ngAnimate', 'ui.bootstrap']);
 angular.module('app', []).controller('rootCtrl', function($scope) {
 
+
+ // $scope.changeState = function () {
+ //    $state.go('app/details');
+ //  };
 //test
 $scope.tmp = 888;
   console.log($scope.tmp);
@@ -31,4 +36,5 @@ console.log($scope.tmp);
     isFirstDisabled: false
   };
 //angular-uib settings END
+
 });
